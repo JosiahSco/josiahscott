@@ -8,11 +8,11 @@ export default function Header() {
             <div id="navContainer">
                 <Link href={'/'} id="homeLink">Home</Link>
                 <hr></hr>
-                <Link href={'/'} id="projectsLink">Projects</Link>
+                <Link href={'/projects'} id="projectsLink">Projects</Link>
                 <hr></hr>
-                <Link href={'/'} id="blogLink">Blog</Link>
+                <Link href={'/blog'} id="blogLink">Blog</Link>
                 <hr></hr>
-                <Link href={'/'} id="contactMeLink">Contact Me</Link>
+                <Link href={'/contact-me'} id="contactMeLink">Contact Me</Link>
             </div>
         </nav>
     )
