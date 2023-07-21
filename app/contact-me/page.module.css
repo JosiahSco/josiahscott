@@ -72,7 +72,7 @@
 .emailForm input, .emailForm button, .message {
     width: 35vw;
     padding: 5px;
-    border: 2px solid white;
+    border: 4px solid white;
     background-color: #457B9D;
     color: white;
 }
@@ -84,15 +84,22 @@
 }
 
 .emailForm input {
-    height: 5vh;
-    
+    height: 7vh;
 }
 
 .emailForm button {
     font-size: 25px;
     margin-top: -5px;
-    height: 5vh;
+    height: 7vh;
     border-radius: 0 0 15px 15px;
+}
+
+.emailForm button:hover {
+   background-color: gray;
+}
+
+.emailForm button:active {
+   background-color: black;
 }
 
 .name {
@@ -102,7 +109,7 @@
 
 .message {
     width: 35vw;
-    height: 20vh;
+    height: 25vh;
     resize: none;
 }
 
