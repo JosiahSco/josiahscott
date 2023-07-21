@@ -62,22 +62,32 @@
     margin: 10px;
 }
 
+.formWrapper {
+    background-color: #457B9D;
+    border-radius: 20px;
+    border: 4px solid white;
+}
+
 .emailForm {
     display: flex;
     flex-direction: column;
-    border-radius: 20px;
-    border: 3px solid white;
+    /* border-radius: 20px; */
+    /* border: 3px solid white; */
 }
 
 .emailForm input, .emailForm button, .message {
     width: 35vw;
-    padding: 5px;
-    border: 4px solid white;
-    background-color: #457B9D;
+    /* padding: 10px;
+    margin: 10px; */
+    border: 0;
+    /* border: 4px solid white; */
+    background-color: transparent;
     color: white;
+    border-bottom: 4px solid white;
 }
 
 .emailForm input::placeholder, .message::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+    padding: 10px;
     font-size: 20px;
     color: white;
     opacity: 1; /* Firefox */
@@ -91,19 +101,22 @@
     font-size: 25px;
     margin-top: -5px;
     height: 7vh;
-    border-radius: 0 0 15px 15px;
+    border-bottom: 0;
+    /* border-radius: 0 0 15px 15px; */
 }
 
 .emailForm button:hover {
    background-color: gray;
+   border-radius: 0 0 15px 15px;
 }
 
 .emailForm button:active {
-   background-color: black;
+   background-color: #E63946;
+   border-radius: 0 0 15px 15px;
 }
 
 .name {
-    border-radius: 15px 15px 0 0;
+    /* border-radius: 15px 15px 0 0; */
 }
 
 
@@ -127,6 +140,9 @@
 
 .links a {
     margin: 10px;
+    position: relative;
+    width: 125px;
+    height: 125px;
 }
 
 @media only screen and (max-width: 768px) {
@@ -138,5 +154,11 @@
     .rightWrapper h2 {
         font-size: 32px;
         margin: 10px;
+    }
+
+    .links a {
+        position: relative;
+        width: 75px;
+        height: 75px;
     }
 }

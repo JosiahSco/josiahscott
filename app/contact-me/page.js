@@ -41,24 +41,21 @@ export default function ContactMe() {
                             <a href='https://github.com/JosiahSco' target='_blank'>
                                 <Image 
                                     src='/github-pages.png'
-                                    width={100}
-                                    height={100}
+                                    fill={true}
                                     alt='Github Logo'
                                 />
                             </a>
                             <a href='https://www.linkedin.com/in/josiah-scott-379b08238/' target='_blank'>
                                 <Image 
                                     src='/linkedin-tile.svg'
-                                    width={100}
-                                    height={100}
+                                    fill={true}
                                     alt='LinkedIn Logo'
                                 />
                             </a>
                             <a href='https://www.discordapp.com/users/245749938686787584' target='_blank'>
                                 <Image 
                                     src='/discord2.png'
-                                    width={100}
-                                    height={100}
+                                    fill={true}
                                     alt='Discord Logo'
                                 />
                             </a>
@@ -66,6 +63,7 @@ export default function ContactMe() {
                     </div>
                     <div className={styles.rightWrapper}>
                         <h2>Send Me a Message</h2>
+                        <div className={styles.formWrapper}>
                         <form className={styles.emailForm} onSubmit={handleSubmit}>
                             <label>
                                 <input className={styles.name} type='text' name='name' value={formData.name} onChange={handleChange} placeholder='Name' required></input>
@@ -78,6 +76,7 @@ export default function ContactMe() {
                             </label>
                             <button type='submit'>Send Message</button>
                         </form>
+                        </div>
                     </div>
                 </div>
             </div>

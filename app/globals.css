@@ -89,6 +89,10 @@ body {
   overflow-x: hidden;
 }
 
+*:focus {
+  outline: none;
+}
+
 body {
   /* color: rgb(var(--foreground-rgb));
   background: linear-gradient(
