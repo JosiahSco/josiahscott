@@ -21,6 +21,7 @@ export default function ContactMe() {
                 body: JSON.stringify(formData)
             })
             console.log(await response.json());
+            document.getElementById('messageSentModal').showModal();
         } catch (error) {
             console.error("Error:", error);
         }
@@ -29,6 +30,10 @@ export default function ContactMe() {
     const handleChange = (e) => {
         const { name, value } = e.target;
         setFormData((prevData) => ({ ...prevData, [name]: value }));
+    }
+
+    function closeModal() {
+        document.getElementById('messageSentModal').close();
     }
 
     return (
@@ -69,13 +74,21 @@ export default function ContactMe() {
                                 <input className={styles.name} type='text' name='name' value={formData.name} onChange={handleChange} placeholder='Name' required></input>
                             </label>
                             <label>
-                                <input type='text' name='email' value={formData.email} onChange={handleChange} placeholder='Email' required></input>
+                                <input type='email' name='email' value={formData.email} onChange={handleChange} placeholder='Email' required></input>
                             </label>
                             <label>
                                 <textarea className={styles.message} name='message' value={formData.message} onChange={handleChange} placeholder='Your Message' required></textarea>
                             </label>
                             <button type='submit'>Send Message</button>
                         </form>
+                        <dialog id='messageSentModal' className={styles.messageSentModal}>
+                            <div>
+                                <h3>Message Sent!</h3>
+                                <p> Thanks for the message!</p>
+                                <p>I will respond as soon as I can.</p>
+                            </div>
+                            <button id='closeModal' onClick={closeModal}>Close</button>
+                        </dialog>
                         </div>
                     </div>
                 </div>

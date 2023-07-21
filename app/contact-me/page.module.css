@@ -3,7 +3,7 @@
     flex-direction: column;
     justify-content: space-around;
     align-items: center;
-    padding: 6rem;
+    /* padding: 6rem; */
     min-height: 100vh;
 }
 
@@ -77,8 +77,8 @@
 
 .emailForm input, .emailForm button, .message {
     width: 35vw;
-    /* padding: 10px;
-    margin: 10px; */
+    padding: 10px;
+    font-size: 20px;
     border: 0;
     /* border: 4px solid white; */
     background-color: transparent;
@@ -87,7 +87,7 @@
 }
 
 .emailForm input::placeholder, .message::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
-    padding: 10px;
+    /* padding: 10px; */
     font-size: 20px;
     color: white;
     opacity: 1; /* Firefox */
@@ -106,13 +106,15 @@
 }
 
 .emailForm button:hover {
-   background-color: gray;
+   background-color: #E63946;
    border-radius: 0 0 15px 15px;
 }
 
 .emailForm button:active {
+    font-size: 24px;
    background-color: #E63946;
    border-radius: 0 0 15px 15px;
+   box-shadow: inset 5px 5px rgba(0,0,0,0.25);
 }
 
 .name {
@@ -136,6 +138,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    z-index: -1;
 }
 
 .links a {
@@ -160,5 +163,61 @@
         position: relative;
         width: 75px;
         height: 75px;
+    }
+}
+
+.messageSentModal {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 700px;
+    height: 400px;
+    background-color: #457B9D;
+    color: white;
+    font-size: 30px;
+    border-radius: 20px;
+}
+
+.messageSentModal div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 5px;
+    text-align: center;
+}
+
+.messageSentModal button {
+    position: absolute;
+    top: 86%;
+    left: 86.7%;
+    border: 0;
+    background-color: #E63946;
+    color: white;
+    padding: 5px;
+    font-size: 25px;
+    border-radius: 5px;
+}
+
+.messageSentModal button:active {
+    box-shadow: inset 5px 5px rgba(0,0,0,0.25);
+}
+
+
+.messageSentModal::backdrop {
+    background: rgba(0, 0, 0, 0.80);
+}
+
+@media only screen and (max-width: 768px) {
+    .messageSentModal {
+        width: 300px;
+        height: 300px;
+    }
+
+    .messageSentModal button {
+        position: absolute;
+        top: 82%;
+        left: 70%;
     }
 }
