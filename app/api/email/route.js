@@ -7,8 +7,6 @@ export async function POST(request) {
     const subject = `DEV SITE CONTACT from ${name}`
     const recipient = process.env.SMTP_USER
     const emailBody = `Name: ${name}\nEmail: ${email}\nMessage: ${message}`
-    const password = process.env.SMTP_PASSWORD
-    console.log(password)
 
     let transporter = nodemailer.createTransport({
         host: process.env.SMTP_HOST,
@@ -21,8 +19,8 @@ export async function POST(request) {
     });
 
     await transporter.sendMail({
-        from: process.env.SMTP_PASSWORD,
-        to: process.env.SMTP_PASSWORD,
+        from: process.env.SMTP_USER,
+        to: process.env.SMTP_USER,
         subject: subject,
         text: emailBody,
         html: ``
