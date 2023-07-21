@@ -48,7 +48,7 @@ export default function ContactMe() {
                             </a>
                             <a href='https://www.linkedin.com/in/josiah-scott-379b08238/' target='_blank'>
                                 <Image 
-                                    src='/linkedin.png'
+                                    src='/linkedin-tile.svg'
                                     width={100}
                                     height={100}
                                     alt='LinkedIn Logo'

@@ -66,7 +66,7 @@
     display: flex;
     flex-direction: column;
     border-radius: 20px;
-    /* border: 4px solid white; */
+    border: 3px solid white;
 }
 
 .emailForm input, .emailForm button, .message {
@@ -78,19 +78,21 @@
 }
 
 .emailForm input::placeholder, .message::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+    font-size: 20px;
     color: white;
     opacity: 1; /* Firefox */
 }
 
 .emailForm input {
     height: 5vh;
+    
 }
 
 .emailForm button {
+    font-size: 25px;
     margin-top: -5px;
     height: 5vh;
     border-radius: 0 0 15px 15px;
-    background-color: ;
 }
 
 .name {
