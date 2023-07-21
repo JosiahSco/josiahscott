@@ -10,7 +10,7 @@
 .outerCard {
     width: 95vw;
     height: 80vh;
-    background-color: #457B9D;
+    /* background-color: #457B9D; */
     border-radius: 20px;
 }
 
@@ -51,7 +51,83 @@
     align-items: center;
 }
 
+.leftWrapper h1 {
+    color: white;
+    font-size: 85px;
+}
+
+.rightWrapper h2 {
+    color: white;
+    font-size: 55px;
+    margin: 10px;
+}
+
 .emailForm {
     display: flex;
     flex-direction: column;
+    border-radius: 20px;
+    /* border: 4px solid white; */
+}
+
+.emailForm input, .emailForm button, .message {
+    width: 35vw;
+    padding: 5px;
+    border: 2px solid white;
+    background-color: #457B9D;
+    color: white;
+}
+
+.emailForm input::placeholder, .message::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+    color: white;
+    opacity: 1; /* Firefox */
+}
+
+.emailForm input {
+    height: 5vh;
+}
+
+.emailForm button {
+    margin-top: -5px;
+    height: 5vh;
+    border-radius: 0 0 15px 15px;
+    background-color: ;
+}
+
+.name {
+    border-radius: 15px 15px 0 0;
+}
+
+
+.message {
+    width: 35vw;
+    height: 20vh;
+    resize: none;
+}
+
+@media only screen and (max-width: 768px) {
+    .emailForm input, .message, .emailForm button {
+        width: 80vw;
+    }
+}
+
+.links {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.links a {
+    margin: 10px;
+}
+
+@media only screen and (max-width: 768px) {
+
+    .leftWrapper h1 {
+        font-size: 55px;
+    }
+    
+    .rightWrapper h2 {
+        font-size: 32px;
+        margin: 10px;
+    }
 }

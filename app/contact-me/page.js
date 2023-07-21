@@ -21,7 +21,6 @@ export default function ContactMe() {
                 body: JSON.stringify(formData)
             })
             console.log(await response.json());
-            //console.log(JSON.stringify(formData))
         } catch (error) {
             console.error("Error:", error);
         }
@@ -37,21 +36,45 @@ export default function ContactMe() {
             <div className={styles.outerCard}>
                 <div className={styles.cardContent}>
                     <div className={styles.leftWrapper}>
-                        <h1>Contact Me</h1>
+                        <h1>Useful Links</h1>
+                        <div className={styles.links}>
+                            <a href='https://github.com/JosiahSco' target='_blank'>
+                                <Image 
+                                    src='/github-pages.png'
+                                    width={100}
+                                    height={100}
+                                    alt='Github Logo'
+                                />
+                            </a>
+                            <a href='https://www.linkedin.com/in/josiah-scott-379b08238/' target='_blank'>
+                                <Image 
+                                    src='/linkedin.png'
+                                    width={100}
+                                    height={100}
+                                    alt='LinkedIn Logo'
+                                />
+                            </a>
+                            <a href='https://www.discordapp.com/users/245749938686787584' target='_blank'>
+                                <Image 
+                                    src='/discord2.png'
+                                    width={100}
+                                    height={100}
+                                    alt='Discord Logo'
+                                />
+                            </a>
+                        </div>
                     </div>
                     <div className={styles.rightWrapper}>
+                        <h2>Send Me a Message</h2>
                         <form className={styles.emailForm} onSubmit={handleSubmit}>
                             <label>
-                                Name:
-                                <input type='text' name='name' value={formData.name} onChange={handleChange} required></input>
+                                <input className={styles.name} type='text' name='name' value={formData.name} onChange={handleChange} placeholder='Name' required></input>
                             </label>
                             <label>
-                                Email:
-                                <input type='text' name='email' value={formData.email} onChange={handleChange} required></input>
+                                <input type='text' name='email' value={formData.email} onChange={handleChange} placeholder='Email' required></input>
                             </label>
                             <label>
-                                Message:
-                                <textarea name='message' value={formData.message} onChange={handleChange} required></textarea>
+                                <textarea className={styles.message} name='message' value={formData.message} onChange={handleChange} placeholder='Your Message' required></textarea>
                             </label>
                             <button type='submit'>Send Message</button>
                         </form>

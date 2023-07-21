@@ -15,11 +15,12 @@ nav {
     width: 100%;
     display: flex;
     justify-content: space-evenly;
+    color: white;
 
 }
 
 .verticalRule {
-    border-left: 2px solid #000;
+    border-left: 2px solid white;
     
 }
 
