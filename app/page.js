@@ -7,7 +7,7 @@ export default function Home() {
     <main className={styles.main}>
       <div className={styles.bio}>
         <h1>Josiah Scott</h1>
-        <p>I am a sofware developer and student of computer science. This website is my first jump into web development.</p>
+        <p>I am a sofware developer and computer science student. This website is my first jump into web development.</p>
         <p>I intend to use this website to show off my projects, and blog about my progress as well as development topics that interest me.</p>
         <p>Check out my projects, blog posts, or send me a message.</p>
         <p>josiahscott.dev is under active development</p>
