@@ -11,6 +11,7 @@
   "dependencies": {
     "@aws-sdk/client-ses": "^3.370.0",
     "aws-crt": "^1.15.22",
+    "contentful": "^10.3.6",
     "encoding": "^0.1.13",
     "eslint": "8.45.0",
     "eslint-config-next": "13.4.10",
