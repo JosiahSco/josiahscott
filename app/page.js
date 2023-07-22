@@ -5,14 +5,20 @@ import Header from '@/components/header/Header'
 export default function Home() {
   return (
     <main className={styles.main}>
-      {/* <Header></Header> */}
-      {/* <div>Site Under Construction</div>
-      <Image 
-        src='/old-under-construction-gif.gif'
-        width={250}
-        height={250}
-        alt='Construction Worker Gif'
-      /> */}
+      <div className={styles.bio}>
+        <h1>Josiah Scott</h1>
+        <p>I am a sofware developer and student of computer science. This website is my first jump into web development.</p>
+        <p>I intend to use this website to show off my projects, and blog about my progress as well as development topics that interest me.</p>
+        <p>Check out my projects, blog posts, or send me a message.</p>
+        <p>josiahscott.dev is under active development</p>
+      </div>
+      <div className={styles.workingOn}>
+        <h2>Currently working on</h2>
+        <ul>
+          <li>Refining styling on contact page</li>
+          <li>Displaying blog posts with Contentful CMS</li>
+        </ul>
+      </div>
     </main>
   )
 }
