@@ -1,17 +1,17 @@
 import styles from './page.module.css'
 import client from './contentful'
 
-export async function getStaticProps() {
-    const contClient = client;
-    const resp = await contClient.getEntries({ content_type: 'blogPage' });
-    console.log(resp)
+// export async function getStaticProps() {
+//     const contClient = client;
+//     const resp = await contClient.getEntries({ content_type: 'blogPage' });
+//     console.log(resp)
 
-    return {
-        props: {
-            posts: resp.items
-        }
-    }
-}
+//     return {
+//         props: {
+//             posts: resp.items
+//         }
+//     }
+// }
 
 export default function Blog({ posts }) {
     //console.log(posts)
