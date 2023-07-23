@@ -16,9 +16,9 @@ export default function Header() {
                 <Link href={'/contact-me'} id="contactMeLink">
                     Contact
                     <Image 
-                        src='/link-thin.svg'
-                        width={17}
-                        height={17}
+                        src='/link.svg'
+                        width={20}
+                        height={20}
                         alt='Link Icon'
                     />
                 </Link>
