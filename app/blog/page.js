@@ -1,5 +1,4 @@
 import styles from './page.module.css'
-import client from './contentful'
 
 // export async function getStaticProps() {
 //     const contClient = client;
@@ -13,8 +12,7 @@ import client from './contentful'
 //     }
 // }
 
-export default function Blog({ posts }) {
-    //console.log(posts)
+export default function Blog() {
     return (
         <main className={styles.main}>
          <h1>This is where the blog post previews will go</h1>
