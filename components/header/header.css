@@ -16,7 +16,8 @@ nav {
     display: flex;
     justify-content: space-evenly;
     color: white;
-
+    font-weight: bold;
+    font-size: 18px;
 }
 
 .verticalRule {

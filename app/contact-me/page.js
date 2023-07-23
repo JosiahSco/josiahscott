@@ -48,6 +48,8 @@ export default function ContactMe() {
                                     src='/github-pages.png'
                                     fill={true}
                                     alt='Github Logo'
+                                    sizes='(max-width: 768px) 75px, (max-width: 1200px) 125px'
+                                    priority
                                 />
                             </a>
                             <a href='https://www.linkedin.com/in/josiah-scott-379b08238/' target='_blank'>
@@ -55,6 +57,8 @@ export default function ContactMe() {
                                     src='/linkedin-tile.svg'
                                     fill={true}
                                     alt='LinkedIn Logo'
+                                    sizes='(max-width: 768px) 75px, (max-width: 1200px) 125px'
+                                    priority
                                 />
                             </a>
                             <a href='https://www.discordapp.com/users/245749938686787584' target='_blank'>
@@ -62,6 +66,8 @@ export default function ContactMe() {
                                     src='/discord2.png'
                                     fill={true}
                                     alt='Discord Logo'
+                                    sizes='(max-width: 768px) 75px, (max-width: 1200px) 125px'
+                                    priority
                                 />
                             </a>
                         </div>
@@ -95,4 +101,8 @@ export default function ContactMe() {
             </div>
         </main>
     )
+}
+
+export async function getStaticProps() {
+
 }
