@@ -102,7 +102,3 @@ export default function ContactMe() {
         </main>
     )
 }
-
-export async function getStaticProps() {
-
-}
