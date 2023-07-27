@@ -1,21 +1,31 @@
 import styles from './page.module.css'
+import client from './contentful';
+import Link from 'next/link';
 
-// export async function getStaticProps() {
-//     const contClient = client;
-//     const resp = await contClient.getEntries({ content_type: 'blogPage' });
-//     console.log(resp)
+async function getPosts() {
+    const contClient = client;
+    const resp = await contClient.getEntries({ content_type: 'blogPage' });
+    return resp.items
+}
 
-//     return {
-//         props: {
-//             posts: resp.items
-//         }
-//     }
-// }
-
-export default function Blog() {
+export default async function Blog() {
+    const posts = await getPosts();
+    //console.log(posts)
     return (
         <main className={styles.main}>
-         <h1>This is where the blog post previews will go</h1>
+         {/* <h1>Blog Posts</h1> */}
+         <div className={styles.postPreviews}>
+         {posts.map(post => (
+            <Link href={'blog/' + post.fields.slug}>
+            <div className={styles.post} key={post.sys.id}>
+                <h2>
+                {post.fields.title}
+                </h2>
+                
+            </div>
+            </Link>
+         ))}
+         </div>
         </main>
     )
 }

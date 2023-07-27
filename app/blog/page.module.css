@@ -10,3 +10,27 @@
 .main p {
     max-width: 400px;;
 }
+
+.postPreviews {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    width: 95vw;
+}
+
+.post {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #457B9D;
+    width: 300px;
+    height: 300px;
+    padding: 20px;
+    border-radius: 20px;
+    margin: 20px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.5);
+}
+
+.post:hover {
+    background-color: #E63946;
+}

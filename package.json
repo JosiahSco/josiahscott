@@ -10,6 +10,7 @@
   },
   "dependencies": {
     "@aws-sdk/client-ses": "^3.370.0",
+    "@contentful/rich-text-html-renderer": "^16.1.0",
     "aws-crt": "^1.15.22",
     "contentful": "^10.3.6",
     "encoding": "^0.1.13",
