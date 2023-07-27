@@ -16,7 +16,7 @@ export default async function Blog() {
          {/* <h1>Blog Posts</h1> */}
          <div className={styles.postPreviews}>
          {posts.map(post => (
-            <Link href={'blog/' + post.fields.slug}>
+            <Link key={post.fields.slug} href={'blog/' + post.fields.slug}>
             <div className={styles.post} key={post.sys.id}>
                 <h2>
                 {post.fields.title}
