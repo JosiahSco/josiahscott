@@ -12,6 +12,7 @@
 }
 
 .postPreviews {
+    margin: 5vh;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
@@ -20,6 +21,7 @@
 
 .post {
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     background-color: #457B9D;
@@ -31,6 +33,11 @@
     box-shadow: 0 4px 8px rgba(0,0,0,0.5);
 }
 
-.post:hover {
-    background-color: #E63946;
+.post h2 {
+    text-align: center;
 }
+
+.post:hover {
+    box-shadow: 0 4px 16px rgba(0,0,0,0.7);
+}
+

@@ -8,15 +8,17 @@ export default async function BlogPostPage({ params }) {
         'fields.slug': params.slug
       });
 
-    console.log(documentToHtmlString(response.items[0].fields.body))
+
+    let bodyHTML = documentToHtmlString(response.items[0].fields.body);
 
     return (
         <main className={styles.main}>
-            <div>
-                <div>
+            <div className={styles.postContainer}>
+                <h1>
                     {response.items[0].fields.title}
-                </div>
-                <div dangerouslySetInnerHTML={ { __html: documentToHtmlString(response.items[0].fields.body) } }/>
+                </h1>
+                <div className={styles.date}>{response.items[0].fields.date}</div>
+                <div dangerouslySetInnerHTML={ { __html: bodyHTML } }/>
             </div>
         </main>
     )

@@ -8,14 +8,14 @@ export default function Header() {
         <nav>
             <div id="navContainer">
                 <Link href={'/'} id="homeLink">Home</Link>
-                <div className="verticalRule"/>
+                <div className="verticalRule" />
                 <Link href={'/projects'} id="projectsLink">Projects</Link>
-                <div className="verticalRule"/>
+                <div className="verticalRule" />
                 <Link href={'/blog'} id="blogLink">Blog</Link>
-                <div className="verticalRule"/>
+                <div className="verticalRule" />
                 <Link href={'/contact-me'} id="contactMeLink">
                     Contact
-                    <Image 
+                    <Image
                         src='/link.svg'
                         width={20}
                         height={20}

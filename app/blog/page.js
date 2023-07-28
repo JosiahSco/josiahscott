@@ -10,7 +10,6 @@ async function getPosts() {
 
 export default async function Blog() {
     const posts = await getPosts();
-    //console.log(posts)
     return (
         <main className={styles.main}>
          {/* <h1>Blog Posts</h1> */}
@@ -21,6 +20,8 @@ export default async function Blog() {
                 <h2>
                 {post.fields.title}
                 </h2>
+                <p>{post.fields.date}</p>
+                <p>{}</p>
                 
             </div>
             </Link>

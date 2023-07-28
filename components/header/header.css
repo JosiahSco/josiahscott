@@ -20,6 +20,10 @@ nav {
     font-size: 18px;
 }
 
+.headerLink {
+   width: 75px;
+}
+
 .verticalRule {
     border-left: 2px solid white;
     

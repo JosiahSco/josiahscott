@@ -15,8 +15,8 @@ export default function Home() {
       <div className={styles.workingOn}>
         <h2>Currently working on</h2>
         <ul>
-          <li>Refining styling on contact page</li>
-          <li>Displaying blog posts with Contentful CMS</li>
+          <li>Dynamic routing for blog</li>
+          <li>Styling blog previews and posts</li>
         </ul>
       </div>
     </main>
