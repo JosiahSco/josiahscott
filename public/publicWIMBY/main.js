@@ -37,7 +37,6 @@ document.querySelector('.search-bar').addEventListener('keypress', function (e) 
                     if (json.length <= 0) {
                         alert('Invalid Location Entered');
                     } else {
-                        console.log(json);
                         getCurrentWeather(json.lat, json.lon);
                     }
                 });
@@ -48,7 +47,6 @@ document.querySelector('.search-bar').addEventListener('keypress', function (e) 
                     if (json.length <= 0) {
                         alert('Invalid Location Entered');
                     } else {
-                        console.log(json);
                         getCurrentWeather(json[0].lat, json[0].lon);
                     }
                 });
@@ -60,7 +58,6 @@ function getCurrentWeather(latitude, longitude) {
     fetch(`https://api.openweathermap.org/data/2.5/weather?lat=${latitude}&lon=${longitude}&units=imperial&appid=${WEATHER_KEY}`)
         .then(response => response.json())
         .then(json => {
-            console.log(json);
             hideSearchElement();
             document.getElementById('weatherWrapper').style.display = 'flex';
             fillCurrentWeatherData(json);
@@ -70,7 +67,6 @@ function getCurrentWeather(latitude, longitude) {
     fetch(`https://api.openweathermap.org/data/2.5/forecast?lat=${latitude}&lon=${longitude}&units=imperial&appid=${WEATHER_KEY}`)
         .then(response => response.json())
         .then(json => {
-            console.log(json);
             fillForecast(json);
         });
 }
@@ -220,7 +216,6 @@ function fillForecast(json) {
 
             conditions.push(json.list[j].weather[0].id)
         }
-        console.log(conditions);
         if (conditions.some(condition => lvl7Conditions.includes(condition))) {
             // display thunderstorm
             forecastImgs[i].src = "graphics/1530363_weather_clouds_night_storm_icon.svg";
