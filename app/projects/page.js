@@ -1,9 +1,16 @@
 import styles from './page.module.css'
+import Link from 'next/link'
 
 export default function Projects() {
     return (
         <main className={styles.main}>
-            <h1>This is where my projects will go</h1>
+            <Link href={'/projects/wimby'}>
+                <div className={styles.wimby}>
+                    <h1>
+                        ☁WIMBY
+                    </h1>
+                </div>
+            </Link>
         </main>
     )
 }

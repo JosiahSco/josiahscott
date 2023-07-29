@@ -2,7 +2,38 @@
     display: flex;
     flex-direction: column;
     justify-content: space-around;
+    flex-wrap: wrap;
     align-items: center;
     padding: 6rem;
     min-height: 100vh;
+}
+
+.wimby {
+    width: 600px;
+    height: 300px;
+    border: solid 4px white;
+    border-radius: 20px;
+    background-image: linear-gradient(#232f46,#49365f,#985E6D);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.5);
+}
+
+.wimby:hover {
+    box-shadow: 0 4px 16px rgba(0,0,0,0.5);
+}
+
+.wimby h1 {
+    font-size: 64px;
+}
+
+@media only screen and (max-width: 768px) {
+    .wimby {
+        width: 300px;
+    }
+
+    .wimby h1 {
+        font-size: 48px;
+    }
 }
