@@ -32,6 +32,7 @@
     margin: 20px;
     box-shadow: 0 4px 8px rgba(0,0,0,0.5);
     padding: 0;
+    border: solid 4px white;
 }
 
 .postLeft {
@@ -69,8 +70,9 @@
     width: 100%;
     margin: 0px;
     padding: 8px;
-    border-radius: 0 0 20px 0;
+    border-radius: 0 0 15px 0;
     background-color: #E63946;
+    border-top: solid 4px white;
 }
 
 .readMore:active {
@@ -100,6 +102,6 @@
     }
 
     .readMore {
-        border-radius: 0 0 20px 20px;
+        border-radius: 0 0 15px 15px;
     }
 }

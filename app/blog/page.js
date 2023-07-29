@@ -11,7 +11,6 @@ async function getPosts() {
 
 export default async function Blog() {
     const posts = await getPosts();
-    console.log(posts[0].fields.preview)
     return (
         <main className={styles.main}>
          {/* <h1>Blog Posts</h1> */}
