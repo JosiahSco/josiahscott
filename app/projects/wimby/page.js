@@ -16,7 +16,7 @@ export default function WIMBY() {
 
     return (
         <main className={styles.main}>
-            <iframe src="/wimby/index.html" id='iframe' style={{ width: '85vw', height: '85vh', border: 'solid 4px white'}}/>
+            <iframe src="/publicWIMBY/index.html" id='iframe' style={{ width: '85vw', height: '85vh', border: 'solid 4px white'}}/>
         </main>
     )
 }
