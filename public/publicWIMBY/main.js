@@ -1,4 +1,3 @@
-import { getAPIKey } from "./config.js";
 
 let WEATHER_KEY;
 
