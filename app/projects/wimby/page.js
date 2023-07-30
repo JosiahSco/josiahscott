@@ -5,13 +5,18 @@ import { useEffect } from 'react'
 export default function WIMBY() {
 
     useEffect(() => {
-        fetch('/api/weather-key')
-        .then(response => response.json())
-        .then(variableValue => {
-            // Send the variable value to the iframe's JavaScript using postMessage.
-            const iframe = document.getElementById('iframe');
-            iframe.contentWindow.postMessage(variableValue);
-        });
+        const handleIframeLoad = () => {
+            fetch('/api/weather-key')
+            .then(response => response.json())
+            .then(variableValue => {
+                // Send the variable value to the iframe's JavaScript using postMessage.
+                const iframe = document.getElementById('iframe');
+                iframe.contentWindow.postMessage(variableValue);
+            });
+        }
+
+        const iframe = document.getElementById('iframe');
+        iframe.addEventListener('load', handleIframeLoad);
     })
 
     return (
