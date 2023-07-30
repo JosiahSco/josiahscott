@@ -26,8 +26,8 @@ function findMyPosition() {
 document.querySelector('#getLocation').addEventListener('click', findMyPosition);
 
 
-document.querySelector('.search-bar').addEventListener('keypress', function (e) {
-    if (e.keyCode == 13) {
+document.querySelector('.search-bar').addEventListener('keypress', function (event) {
+    if (event.key === 'Enter' || event.keyCode === 13 || event.keyCode === 3) {
         var hasNumber = /\d/;
         let locationInput = document.getElementById("searchInput").value;
         if (hasNumber.test(locationInput)) { //if search input is zipcode

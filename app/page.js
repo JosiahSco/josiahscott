@@ -15,8 +15,8 @@ export default function Home() {
       <div className={styles.workingOn}>
         <h2>Currently working on</h2>
         <ul>
-          <li>Dynamic routing for blog</li>
-          <li>Styling blog previews and posts</li>
+          <li>Initial project page setup</li>
+          <li>Porting and fixing weather project</li>
         </ul>
       </div>
     </main>
