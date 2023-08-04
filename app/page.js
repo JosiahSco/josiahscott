@@ -12,13 +12,6 @@ export default function Home() {
         <p>Check out my projects, blog posts, or send me a message.</p>
         <p>josiahscott.dev is under active development</p>
       </div>
-      <div className={styles.workingOn}>
-        <h2>Currently working on</h2>
-        <ul>
-          <li>Initial project page setup</li>
-          <li>Porting and fixing weather project</li>
-        </ul>
-      </div>
     </main>
   )
 }
