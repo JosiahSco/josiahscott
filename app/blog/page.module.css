@@ -5,6 +5,7 @@
     align-items: center;
     padding: 2rem;
     min-height: 100vh;
+    font-size: 18px;
 }
 
 .main p {
@@ -24,7 +25,7 @@
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    background-color: #457B9D;
+    background-color: #859098;
     width: 600px;
     height: 300px;
     padding: 20px;
@@ -71,7 +72,8 @@
     margin: 0px;
     padding: 8px;
     border-radius: 0 0 15px 0;
-    background-color: #E63946;
+    /* background-color: #E63946; */
+    background-color: #457B9D;
     border-top: solid 4px white;
 }
 

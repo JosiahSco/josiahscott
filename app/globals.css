@@ -1,5 +1,6 @@
 :root {
-  background-color: #1D3557;
+  /* background-color: #1D3557; */
+  background-color: #0f1a29;
   /* background-color: #fff; */
   color: #F1FAEE;
   color: black;
@@ -84,6 +85,7 @@
   color: white;
   scrollbar-width: auto;
   scrollbar-color: #457B9D;
+  font-family: monospace;
 }
 
 html,
@@ -112,6 +114,7 @@ body {
       rgb(var(--background-end-rgb))
     )
     rgb(var(--background-start-rgb)); */
+    font-family: monospace;
 }
 
 a {
@@ -130,26 +133,3 @@ body {
   justify-content: center;
 }
 
-@media only screen and (min-width: 1280px) {
-  ::-webkit-scrollbar {
-    width: 10px;
-  }
-
-  /* Track */
-  ::-webkit-scrollbar-track {
-    background: transparent;
-    border-radius: 5px;
-  }
-
-  /* Handle */
-  ::-webkit-scrollbar-thumb {
-    background: #457B9D;
-    border-radius: 5px;
-  }
-
-  /* Handle on hover */
-  ::-webkit-scrollbar-thumb:hover {
-    background: #E63946;
-  }
-
-}

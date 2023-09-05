@@ -1,19 +1,38 @@
 .main {
     display: flex;
-    flex-direction: column;
-    justify-content: space-around;
+    flex-direction: row;
+    justify-content: space-evenly;
     flex-wrap: wrap;
     align-items: center;
     padding: 6rem;
     min-height: 100vh;
+    min-width: 100vw;
+}
+
+.card {
+    width: 500px;
+    height: 300px;
+    margin: 20px;
 }
 
 .wimby {
-    width: 600px;
+    width: 500px;
     height: 300px;
     border: solid 4px white;
     border-radius: 20px;
     background-image: linear-gradient(#232f46,#49365f,#985E6D);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.5);
+}
+
+.comingSoon {
+    width: 500px;
+    height: 300px;
+    border: solid 4px white;
+    border-radius: 20px;
+    background-color: #859098;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -28,12 +47,25 @@
     font-size: 64px;
 }
 
+.comingSoon h1 {
+    font-size: 44px;
+}
+
 @media only screen and (max-width: 768px) {
+    
     .wimby {
         width: 300px;
     }
 
     .wimby h1 {
         font-size: 48px;
+    }
+
+    .comingSoon {
+        width: 300px;
+    }
+
+    .comingSoon h1 {
+        font-size: 26px;
     }
 }

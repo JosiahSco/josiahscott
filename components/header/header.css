@@ -3,7 +3,8 @@ nav {
     top: 1vh;
     height: 50px;
     width: 95vw;
-    background-color: #457B9D;
+    /* background-color: #457B9D; */
+    background-color: #859098;
     box-shadow: 0 4px 4px #00000040;
     border-radius: 15px;
     display: flex;
@@ -17,7 +18,7 @@ nav {
     justify-content: space-evenly;
     color: white;
     font-weight: bold;
-    font-size: 18px;
+    font-size: 22px;
 }
 
 .headerLink {
