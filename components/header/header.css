@@ -18,7 +18,8 @@
     align-items: center;
     padding: 20px;
     z-index: 3;
-    position: relative;
+    position: fixed;
+    top: 0;
 }
 
 .menu-toggle {
@@ -46,7 +47,7 @@
     display: block;
     background-color: #859098;
     position: fixed;
-    top: 60px; /* Adjust this value as needed to position it below the navigation bar */
+    top: 60px; 
     left: 0;
     right: 0;
     padding: 20px;
