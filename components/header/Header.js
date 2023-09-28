@@ -66,7 +66,7 @@ export default function Header() {
                         </Link>
                     </li>
                 </ul>
-                <button className='dark-mode-toggle'>?</button>
+                <button className='dark-mode-toggle'><img src='/moon-solid.svg' className='moon'></img></button>
                 {/* <div className="verticalRule" />
                 <div className="verticalRule" />
                 <div className="verticalRule" /> */}
