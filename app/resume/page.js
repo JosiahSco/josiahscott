@@ -50,7 +50,7 @@ export default function Resume() {
                         </ul>
                     </div>
                     <div className='hobby-lobby'>
-                        <h2>UCO - C++ Professor's Assistant</h2>
+                        <h2>UCO - C++ Professors Assistant</h2>
                         <ul>
                             <li>Assessed code for readability, efficiency, organization, and formatting</li>
                             <li>Identified and worked to troubleshoot errors in student submitted programs</li>
