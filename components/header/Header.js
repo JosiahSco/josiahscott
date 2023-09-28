@@ -49,6 +49,7 @@ export default function Header() {
         <nav className='navigation' ref={navRef}>
             {/* <div id="navContainer"> */}
                 <button className="menu-toggle" onClick={toggleMenu}>☰</button>
+                <p className='name'>Josiah Scott</p>
                 <ul className={`nav-links ${isMenuOpen ? 'open' : ''}`}>
                     <li>
                         <Link href={'/'} id="homeLink">Home</Link>
@@ -71,6 +72,7 @@ export default function Header() {
                         </Link>
                     </li>
                 </ul>
+                <button className='dark-mode-toggle'>?</button>
                 {/* <div className="verticalRule" />
                 <div className="verticalRule" />
                 <div className="verticalRule" /> */}
