@@ -10,8 +10,9 @@ export default function Home() {
         <div className='pic-holder'>
           <Image
           src="/temp-profile2.jpg"
-          width={400}
-          height={400}
+          fill={true}
+          // width={400}
+          // height={400}
           alt="Picture of the author"
         />
         </div>
