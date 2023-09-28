@@ -19,6 +19,7 @@
     margin: 2vw;
     display: flex;
     flex-direction: row;
+    /* flex-wrap: wrap; */
 
 }
 
@@ -54,12 +55,14 @@
 .leftWrapper h1 {
     color: white;
     font-size: 85px;
+    min-width: 561px;
 }
 
 .rightWrapper h2 {
     color: white;
     font-size: 55px;
     margin: 10px;
+    min-width: 515px;
 }
 
 .formWrapper {

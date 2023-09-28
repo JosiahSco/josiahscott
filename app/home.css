@@ -7,22 +7,24 @@
   padding: 2rem;
   min-height: 100vh;
   color: white;
+  /* margin-top: 30px; */
 }
 
 
 .bio {
   margin: 20px;
+  margin-top: 80px;
 }
 
 .bio h1{
   text-align: left;
-  font-size: 60px;
+  font-size: 50px;
 }
 
 .bio p{
   margin-top: 20px;
   margin-bottom: 20px;
-  font-size: 25px;
+  font-size: 20px;
   max-width: 700px;
 }
 
@@ -106,3 +108,29 @@
   width: 350px;
   height: 350px;
 }
+
+.interests h2, .skills h2 {
+  font-size: 32px;
+}
+
+
+.interests li, .skills li{
+  list-style-position: inside;
+  font-size: 18px;
+  min-width: 300px;
+}
+
+.interests ul, .skills ul{
+  padding: 10px;
+}
+
+.interests, .skills {
+  margin: 20px;
+}
+
+.bottom-row {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+

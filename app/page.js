@@ -48,10 +48,33 @@ export default function Home() {
       </div>
       <div className="bio">
         <h1>Biography</h1>
-        <p>I am a sofware developer and computer science student. This website is my first jump into web development.</p>
+        <p>
+          I am a sofware developer and computer science student. This website is my first jump into web development. 
+          I am currently working part time as a developer for Hobby Lobby developing frontend functional tests width
+          Playwright, and load tests with Locust.
+        </p>
         <p>I intend to use this website to show off my projects, and blog about my progress as well as development topics that interest me.</p>
         <p>Check out my projects, blog posts, or send me a message.</p>
-        <p>josiahscott.dev is under active development</p>
+      <div className='bottom-row'>
+        <div className='interests'>
+          <h2>Interests</h2>
+          <ul>
+            <li>Webapp Development</li>
+            <li>Programming Language Design</li>
+            <li>Automated Testing</li>
+            <li>Containerization</li>
+          </ul>
+        </div>
+        <div className='skills'>
+          <h2>Skills</h2>
+          <ul>
+            <li>Frontend Testing</li>
+            <li>API Load Testing</li>
+            <li>Object Oriented Programming</li>
+            <li>TypeScript, Python, C++</li>
+          </ul>
+        </div>
+      </div>
       </div>
     </main>
   )
