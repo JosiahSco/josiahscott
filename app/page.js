@@ -7,14 +7,14 @@ export default function Home() {
   return (
     <main className="main">
       <div className='profile'>
-        <div className='pic-holder'>
+        <div className='pic-holder' id='pic-holder'>
           {/* <Image
           src="/temp-profile3.jpg"
           width={400}
           height={400}
           alt="Picture of the author"
         /> */}
-        <img src='temp-profile.png' className='pfp'></img>
+        <img src='temp-profile.png' className='pfp' id='pfp'></img>
         </div>
         <div className='links'>
           <a href='https://github.com/JosiahSco' target='_blank'>

@@ -47,17 +47,27 @@
   .profile {
     min-width: 100%;
   }
+  
+  
+  
+}
 
-  .pfp {
+@media only screen and (max-width: 1191px) {
+  #pfp {
     width: 250px;
     height: 250px;
   }
-  
+
+  #pic-holder {
+    width: 250px;
+    height: 250px;
+
+  }
   .pic-holder {
     width: 250px;
     height: 250px;
   }
-
+  
 }
 
 .profile {
@@ -79,8 +89,8 @@
   border-radius: 50%;
   overflow: hidden;
   position: relative;
-  height: 400px;
-  width: 400px;
+  height: 350px;
+  width: 350px;
 }
 
 
@@ -93,6 +103,6 @@
 }
 
 .pfp {
-  width: 400px;
-  height: 400px;
+  width: 350px;
+  height: 350px;
 }
