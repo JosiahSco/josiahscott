@@ -50,7 +50,7 @@ export default function Home() {
         <h1>Biography</h1>
         <p>
           I am a sofware developer and computer science student. This website is my first jump into web development. 
-          I am currently working part time as a developer for Hobby Lobby developing frontend functional tests width
+          I am currently working part time as a developer for Hobby Lobby developing frontend functional tests with
           Playwright, and load tests with Locust.
         </p>
         <p>I intend to use this website to show off my projects, and blog about my progress as well as development topics that interest me.</p>

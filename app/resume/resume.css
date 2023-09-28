@@ -1,0 +1,88 @@
+main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.download-link {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    padding: 5px;
+    border-radius: 5px;
+}
+
+.download-link:hover {
+    background-color: #457B9D;
+}
+
+.card {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 900px;
+    /* background-color: #457B9D; */
+    padding: 20px;
+    border-radius: 2px;
+    margin: 20px;
+}
+
+
+.card-top {
+    margin-top: 100px;
+}
+
+.card h1 {
+    /* margin-right: 150px; */
+    min-width: 400px;
+    text-align: left;
+}
+
+.card h3 {
+    font-weight: 100;
+}
+
+.card:hover {
+    box-shadow: 0 4px 8px rgba(0,0,0,0.25);
+    background-color: #859098;
+}
+
+
+.uco {
+    width: 100%;
+    margin: 0 20px;
+}
+
+.ft {
+    margin: 20px;
+}
+
+.hobby-lobby {
+    width: 100%;
+    margin: 0 20px;
+    max-width: 400px;
+    margin-bottom: 10px;
+}
+
+.hobby-lobby li {
+    list-style-position: inside;
+    font-size: 15px;
+    padding: 1px 10px;
+    text-indent: -1.4em;
+    padding-left: 1.4em;
+}
+
+@media only screen and (max-width: 824px) {
+    .card {
+        min-width: 300px;
+        width:300px;
+    }
+
+    .card h1 {
+        text-align: center;
+        min-width: none;
+    }
+}
