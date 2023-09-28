@@ -14,7 +14,7 @@ export default function Home() {
           height={400}
           alt="Picture of the author"
         /> */}
-        <img src='temp-profile3.jpg' className='pfp'></img>
+        <img src='temp-profile.png' className='pfp'></img>
         </div>
         <div className='links'>
           <a href='https://github.com/JosiahSco' target='_blank'>
