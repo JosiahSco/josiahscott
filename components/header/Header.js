@@ -50,7 +50,7 @@ export default function Header() {
             {/* <div id="navContainer"> */}
                 <button className="menu-toggle" onClick={toggleMenu}>☰</button>
                 <p className='name'>Josiah Scott</p>
-                <ul className={`nav-links ${isMenuOpen ? 'open' : ''}`}>
+                <ul className={`nav-links ${isMenuOpen ? 'open' : 'closed'}`}>
                     <li>
                         <Link href={'/'} id="homeLink">Home</Link>
                     </li>
@@ -63,12 +63,6 @@ export default function Header() {
                     <li>
                         <Link href={'/contact-me'} id="contactMeLink">
                             Contact
-                            <Image
-                                src='/link.svg'
-                                width={20}
-                                height={20}
-                                alt='Link Icon'
-                            />
                         </Link>
                     </li>
                 </ul>
