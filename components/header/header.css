@@ -1,37 +1,91 @@
-nav {
-    position: fixed;
-    top: 1vh;
-    height: 50px;
-    width: 95vw;
-    /* background-color: #457B9D; */
-    background-color: #859098;
+.navigation {
+    /* position: fixed;
     box-shadow: 0 4px 4px #00000040;
-    border-radius: 15px;
+    border-radius: 0px;
     display: flex;
     flex-direction: row;
+    justify-content: space-between;
     align-items: center;
-}
-
-#navContainer {
+    min-height: 60px;
+    */
+    z-index: 3;
     width: 100%;
+    font-size: 22px; 
+    background-color: #859098;
     display: flex;
+    flex-direction: column; /* Change to a column layout for small screens */
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    z-index: 3;
+    position: relative;
+}
+
+.menu-toggle {
+    display: none;
+    font-size: 32px;
+    padding: 0px;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+}
+
+.nav-links {
+    list-style-type: none;
+    display: flex;
+    width: 100%;
     justify-content: space-evenly;
-    color: white;
-    font-weight: bold;
-    font-size: 22px;
+    top: 100%;
+    z-index: 3;
 }
 
-.headerLink {
-   width: 75px;
+.nav-links.open {
+    flex-direction: column;
+    width: 100%;
+    text-align: center;
+    display: block;
+    background-color: #859098;
+    position: fixed;
+    top: 60px; /* Adjust this value as needed to position it below the navigation bar */
+    left: 0;
+    right: 0;
+    padding: 20px;
+
 }
 
-.verticalRule {
-    border-left: 2px solid white;
-    
+.nav-links.open li {
+    padding: 10px 0;
 }
+
+@media (max-width: 768px) {
+    .navigation {
+        align-items: flex-start;
+    }
+
+    .menu-toggle {
+      display: block; /* Show the button on small screens */
+    }
+  
+    .nav-links {
+        display: none;
+        /* Expand the links to the full width of the screen */
+  
+        text-align: left;
+    }
+  
+    .nav-links.open {
+      display: flex; /* Show the links when the menu is open */
+      flex-direction: column;
+      align-items: flex-start;
+    }
+}
+
 
 #contactMeLink {
     display: flex;
     align-items: center;
+    justify-content: center;
 }
+
+
 
