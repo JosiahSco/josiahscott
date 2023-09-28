@@ -48,6 +48,16 @@
     min-width: 100%;
   }
 
+  .pfp {
+    width: 250px;
+    height: 250px;
+  }
+  
+  .pic-holder {
+    width: 250px;
+    height: 250px;
+  }
+
 }
 
 .profile {
@@ -80,4 +90,9 @@
 
 .links {
   min-width: 360px;
+}
+
+.pfp {
+  width: 400px;
+  height: 400px;
 }
