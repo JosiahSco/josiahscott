@@ -1,77 +1,49 @@
 .main {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    align-items: center;
-    /* padding: 6rem; */
     min-height: 100vh;
-}
-
-.outerCard {
-    width: 95vw;
-    height: 80vh;
-    /* background-color: #457B9D; */
-    border-radius: 20px;
-}
-
-.cardContent {
-    height: 92%;
-    margin: 2vw;
     display: flex;
     flex-direction: row;
-    /* flex-wrap: wrap; */
-
-}
-
-@media only screen and (max-width: 768px) {
-    .cardContent {
-        flex-direction: column;
-    }
-}
-
-.email {
-    display: flex;
-    align-items: center;
-}
-
-.leftWrapper {
-    width: 100%;
-    height: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
-
-.rightWrapper {
-    /* width: 100%; */
-    height: 100%;
-    display: flex;
-    flex-direction: column;
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
+    /* margin: 100px 0; */
+    align-content: center;
+}
+
+.leftWrapper {
+    min-width: 600px;
+    margin: 20px;
+    margin-bottom: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.rightWrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-width: 600px;
+    margin: 20px;
+    margin-top: 10px;
 }
 
 .leftWrapper h1 {
-    color: white;
-    font-size: 85px;
-    min-width: 561px;
+    font-size: 60px;
 }
 
 .rightWrapper h2 {
-    color: white;
-    font-size: 55px;
-    margin: 10px;
-    min-width: 515px;
+    font-size: 50px;
 }
 
 .formWrapper {
     /* background-color: #457B9D; */
     background-color: #859098;
-    border-radius: 20px;
+    border-radius: 6px;
     border: 4px solid white;
     margin: 30px;
+    margin-top: 10px;
     min-width: 600px;
 }
 
@@ -94,6 +66,11 @@
     border-bottom: 4px solid white;
 }
 
+.message {
+    height: 220px;
+    resize: none;
+}
+
 .emailForm input::placeholder, .message::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
     /* padding: 10px; */
     font-size: 20px;
@@ -102,7 +79,7 @@
 }
 
 .emailForm input {
-    height: 7vh;
+    height: 60px;
 }
 
 .emailForm button {
@@ -117,33 +94,17 @@
 
 .emailForm button:hover {
    background-color: #457B9D;
-   border-radius: 0 0 15px 15px;
+   /* border-radius: 0 0 15px 15px; */
 }
 
 .emailForm button:active {
     font-size: 24px;
    /* background-color: #E63946; */
    background-color: #457B9D;
-   border-radius: 0 0 15px 15px;
+   /* border-radius: 0 0 15px 15px; */
    box-shadow: inset 5px 5px rgba(0,0,0,0.25);
 }
 
-.name {
-    /* border-radius: 15px 15px 0 0; */
-}
-
-
-.message {
-    width: 35vw;
-    height: 25vh;
-    resize: none;
-}
-
-@media only screen and (max-width: 768px) {
-    .emailForm input, .message, .emailForm button {
-        width: 80vw;
-    }
-}
 
 .links {
     display: flex;
@@ -159,23 +120,6 @@
     height: 125px;
 }
 
-@media only screen and (max-width: 768px) {
-
-    .leftWrapper h1 {
-        font-size: 55px;
-    }
-    
-    .rightWrapper h2 {
-        font-size: 32px;
-        margin: 10px;
-    }
-
-    .links a {
-        position: relative;
-        width: 75px;
-        height: 75px;
-    }
-}
 
 .messageSentModal {
     position: fixed;
@@ -188,7 +132,7 @@
     background-color: #859098;
     color: white;
     font-size: 30px;
-    border-radius: 20px;
+    border-radius: 6px;
 }
 
 .messageSentModal div {
@@ -222,7 +166,46 @@
     background: rgba(0, 0, 0, 0.80);
 }
 
+.icon-and-address {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.icon-and-address p {
+    font-size: 20px;
+}
+
+.contactInfo {
+    margin-top: 20px;
+    margin-bottom: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.emailIcon {
+    height: 100px;
+    width: 100px;
+    position: relative;
+    margin-right: 10px;
+}
+
 @media only screen and (max-width: 768px) {
+
+    .emailForm input, .emailForm button, .message, .formWrapper, .rightWrapper, .leftWrapper {
+        min-width: 300px;
+    }
+
+    .leftWrapper h1 {
+        font-size: 40px;
+    }
+
+    .rightWrapper h2  {
+        font-size: 30px;
+    }
+
     .messageSentModal {
         width: 300px;
         height: 300px;
@@ -233,4 +216,31 @@
         top: 82%;
         left: 70%;
     }
+
+    .links a {
+        position: relative;
+        width: 75px;
+        height: 75px;
+    }
+
+    .emailIcon {
+        width: 50px;
+        height: 50px;
+        position: relative;
+    }
+
+    .contactInfo {
+        margin-bottom: 10px;
+    }
 }
+
+.name {
+    margin: 0;
+}
+
+@media only screen and (max-width: 1350px) {
+    .main {
+        margin: 50px 0px;
+    }
+}
+
