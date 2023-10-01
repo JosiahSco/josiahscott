@@ -1,9 +1,9 @@
 .main {
     display: flex;
     justify-content: center;
-    align-items: flex-start;
+    align-items: center;
     width: 100vw;
-    height: 100vh;
+    min-height: 100vh;
 }
 
 .main h1 {
@@ -11,20 +11,26 @@
     font-size: 40px;
 }
 
+
 .date {
     font-size: 18px;
     text-align: center;
 }
 
 .postContainer {
-    margin: 10vh 0;
+    /* margin: 800px 0; */
+    padding: 100px 0;
     width: 850px;
 }
 
 .postContainer p {
     /* white-space: pre-wrap; */
     font-size: 18px;
-    margin: 20px;
+    margin: 20px 0;
+}
+
+.main li {
+    margin-left: 30px;
 }
 
 @media only screen and (max-width: 950px)  {

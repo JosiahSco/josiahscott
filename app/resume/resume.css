@@ -85,4 +85,8 @@ main {
         text-align: center;
         min-width: none;
     }
+
+    .card h2 {
+        text-align: center;
+    }
 }
