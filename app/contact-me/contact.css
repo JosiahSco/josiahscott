@@ -120,6 +120,10 @@
     height: 125px;
 }
 
+.links a:hover {
+    transform: translateY(-5px);
+}
+
 
 .messageSentModal {
     position: fixed;
@@ -190,6 +194,10 @@
     width: 100px;
     position: relative;
     margin-right: 10px;
+}
+
+.emailIcon:hover {
+    transform: translateY(-5px);
 }
 
 @media only screen and (max-width: 768px) {

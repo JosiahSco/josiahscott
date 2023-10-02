@@ -50,7 +50,7 @@ export default function ContactMe() {
                                     src='/emailIcon.svg'
                                     fill={true}
                                     alt='Email Icon'
-                                    sizes='(max-width: 768px) 75px, (max-width: 1200px) 125px'
+                                    sizes='(max-width: 768px) 50px, (max-width: 1200px) 100px'
                                     priority
                                 />
                             </Link>

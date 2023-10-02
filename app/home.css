@@ -104,6 +104,10 @@
   min-width: 360px;
 }
 
+.links img:hover {
+  transform: translateY(-5px);
+}
+
 .pfp {
   width: 350px;
   height: 350px;

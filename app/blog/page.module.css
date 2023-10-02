@@ -29,7 +29,7 @@
     width: 600px;
     height: 300px;
     padding: 20px;
-    border-radius: 20px;
+    border-radius: 6px;
     margin: 20px;
     box-shadow: 0 4px 8px rgba(0,0,0,0.5);
     padding: 0;
@@ -62,7 +62,7 @@
 
 
 .post:hover {
-    box-shadow: 0 4px 16px rgba(0,0,0,0.7);
+    box-shadow: 0 16px 16px rgba(0,0,0,0.7);
 }
 
 .readMore {
@@ -71,7 +71,7 @@
     width: 100%;
     margin: 0px;
     padding: 8px;
-    border-radius: 0 0 15px 0;
+    border-radius: 0 0 0px 0;
     /* background-color: #E63946; */
     background-color: #457B9D;
     border-top: solid 4px white;
@@ -104,6 +104,6 @@
     }
 
     .readMore {
-        border-radius: 0 0 15px 15px;
+        border-radius: 0 0 6px 6px;
     }
 }
