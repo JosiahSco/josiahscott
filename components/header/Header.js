@@ -49,7 +49,7 @@ export default function Header() {
         <nav className='navigation' ref={navRef}>
             {/* <div id="navContainer"> */}
                 <button className="menu-toggle" onClick={toggleMenu}>☰</button>
-                <p className='name'>Josiah Scott</p>
+                <Link href={'/'} className='name'>Josiah Scott</Link>
                 <ul className={`nav-links ${isMenuOpen ? 'open' : 'closed'}`}>
                     <li>
                         <Link href={'/'} id="homeLink">Home</Link>

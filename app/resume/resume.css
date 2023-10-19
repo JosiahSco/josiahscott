@@ -51,8 +51,8 @@ main {
 hr {
     height: 1px;
     width: 100%;
-    color: black;
-    background-color: black;
+    color: white;
+    background-color: white;
 }
 
 .page ul {
