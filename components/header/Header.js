@@ -47,33 +47,28 @@ export default function Header() {
 
     return (
         <nav className='navigation' ref={navRef}>
-            {/* <div id="navContainer"> */}
-                <button className="menu-toggle" onClick={toggleMenu}>☰</button>
-                <Link href={'/'} className='name'>Josiah Scott</Link>
-                <ul className={`nav-links ${isMenuOpen ? 'open' : 'closed'}`}>
-                    <li>
-                        <Link href={'/'} id="homeLink">Home</Link>
-                    </li>
-                    <li>
-                        <Link href={'/resume'} id='resumeLink'>Resume</Link>
-                    </li>
-                    <li>
-                        <Link href={'/projects'} id="projectsLink">Projects</Link>
-                    </li>
-                    <li>
-                        <Link href={'/blog'} id="blogLink">Blog</Link>
-                    </li>
-                    <li>
-                        <Link href={'/contact-me'} id="contactMeLink">
-                            Contact
-                        </Link>
-                    </li>
-                </ul>
-                <button className='dark-mode-toggle'><img src='/moon-solid.svg' className='moon'></img></button>
-                {/* <div className="verticalRule" />
-                <div className="verticalRule" />
-                <div className="verticalRule" /> */}
-            {/* </div> */}
+          <button className="menu-toggle" onClick={toggleMenu}>☰</button>
+          <Link href={'/'} className='name'>Josiah Scott</Link>
+          <ul className={`nav-links ${isMenuOpen ? 'open' : 'closed'}`}>
+              <li>
+                  <Link href={'/'} id="homeLink">Home</Link>
+              </li>
+              <li>
+                  <Link href={'/resume'} id='resumeLink'>Resume</Link>
+              </li>
+              <li>
+                  <Link href={'/projects'} id="projectsLink">Projects</Link>
+              </li>
+              <li>
+                  <Link href={'/blog'} id="blogLink">Blog</Link>
+              </li>
+              <li>
+                  <Link href={'/contact-me'} id="contactMeLink">
+                      Contact
+                  </Link>
+              </li>
+          </ul>
+          <button className='dark-mode-toggle'><img src='/moon-solid.svg' className='moon'></img></button>
         </nav>
     )
 }
