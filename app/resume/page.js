@@ -28,7 +28,7 @@ export default function Resume() {
                     <div class="education-info">
                         <p>Computer Science</p>
                         <p>GPA: 3.88</p>
-                        <p>President's Honor Roll</p>
+                        <p>Presidents Honor Roll</p>
                     </div>
                     <br />
                 </div>
@@ -81,7 +81,7 @@ export default function Resume() {
                     </ul>
                     <br></br>
                     <div class="space-between-container">
-                        <h4>C++ Teacher's Assistant - UCO</h4>
+                        <h4>C++ Teachers Assistant - UCO</h4>
                         <p>January 2023 - May 2023</p>
                     </div>
                     <ul>
