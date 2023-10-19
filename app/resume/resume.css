@@ -6,6 +6,19 @@ main {
     min-height: 100vh;
 }
 
+.page h2 {
+    font-size: 22px;
+}
+
+.page h4 {
+    font-size: 16px;
+}
+
+.page p {
+    font-size: 14px;
+}
+
+
 .download-link {
     position: fixed;
     bottom: 20px;
@@ -18,75 +31,46 @@ main {
     background-color: #457B9D;
 }
 
-.card {
+.page {
+    max-width: 816px;
+    padding: 8px;
+    margin-top: 75px;
+}
+
+.head {
     display: flex;
-    flex-direction: row;
-    justify-content: center;
-    flex-wrap: wrap;
-    width: 900px;
-    /* background-color: #457B9D; */
-    padding: 20px;
-    border-radius: 2px;
-    margin: 20px;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
 }
 
-
-.card-top {
-    margin-top: 100px;
+.head h1, .head h3 {
+    margin: 4px;
 }
 
-.card h1 {
-    /* margin-right: 150px; */
-    min-width: 400px;
-    text-align: left;
-}
-
-.card h3 {
-    font-weight: 100;
-}
-
-.card:hover {
-    box-shadow: 0 4px 8px rgba(0,0,0,0.25);
-    background-color: #859098;
-}
-
-
-.uco {
+hr {
+    height: 1px;
     width: 100%;
-    margin: 0 20px;
+    color: black;
+    background-color: black;
 }
 
-.ft {
-    margin: 20px;
+.page ul {
+    list-style-position: outside;
 }
 
-.hobby-lobby {
-    width: 100%;
-    margin: 0 20px;
-    max-width: 400px;
-    margin-bottom: 10px;
+.page li {
+    margin-left: 2rem;
+    font-size: 14px;
 }
 
-.hobby-lobby li {
-    list-style-position: inside;
-    font-size: 15px;
-    padding: 1px 10px;
-    text-indent: -1.4em;
-    padding-left: 1.4em;
+.education-info {
+    margin-left: 2rem;
 }
 
-@media only screen and (max-width: 824px) {
-    .card {
-        min-width: 300px;
-        width:300px;
-    }
-
-    .card h1 {
-        text-align: center;
-        min-width: none;
-    }
-
-    .card h2 {
-        text-align: center;
-    }
+.space-between-container {
+    display: flex;
+    justify-content: space-between;
 }
+
+
