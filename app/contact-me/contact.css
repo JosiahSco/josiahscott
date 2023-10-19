@@ -171,6 +171,7 @@
 }
 
 .icon-and-address {
+    margin-top: 10px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -182,7 +183,7 @@
 
 .contactInfo {
     margin-top: 20px;
-    margin-bottom: 50px;
+    margin-bottom: 40px;
     display: flex;
     flex-direction: column;
     justify-content: center;

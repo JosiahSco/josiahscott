@@ -68,6 +68,10 @@ hr {
     margin-left: 2rem;
 }
 
+.skills {
+    margin: 0;
+}
+
 .space-between-container {
     display: flex;
     justify-content: space-between;
