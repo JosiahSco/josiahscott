@@ -65,7 +65,7 @@
     .currentWeatherCard {
         min-width: 300px;
         min-height: 200px;
-        /* margin-top: 50px; */
+        margin-top: 50px;
     }
 
     #currentIcon {
