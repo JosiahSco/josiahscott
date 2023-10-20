@@ -18,7 +18,7 @@ export default function Weather() {
         setShowSearchBar(false);
     }
     return (
-        <main className="main">
+        <main className="weather-main">
             {/* <div className="cloudContainer">
                <div className="cloudIntro"></div>
             </div> */}

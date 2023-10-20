@@ -43,7 +43,6 @@ const WeatherData = ({ weatherData }) => {
 
     const [showDetails, setShowDetails] = useState('none');
     const handleShowDetails = () => {
-        console.log(showDetails)
         if (showDetails == 'none') {
             setShowDetails('block');
         } else {
