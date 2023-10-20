@@ -17,7 +17,7 @@
     padding: 0;
     overflow: hidden;
     /* background: linear-gradient(to bottom, #007ced 1%,#cce7ff 100%); */
-    z-index: 1;
+    z-index: 0;
 }
 
 .cloudIntro {
@@ -40,30 +40,3 @@
 
 }
 
-.searchContainer {
-    /* background-image: url('/graphics/Clouds-PNG-Pic.png'); */
-    /* height: 95vh; */
-    display: flex;
-    flex-direction: column;
-    overflow: hidden;
-    align-items: center;
-    justify-content: center;
-    z-index: 2;
-}
-
-.searchBar {
-    width: 100%;
-    max-width: 755px;
-    background: rgba(25,34,49,0.45);
-    border-radius: 60px;
-    padding: 10px 20px;
-    display: flex;
-    align-items: center;
-    /* box-shadow: 0 4px 4px rgba(0,0,0,0.25); */
-    backdrop-filter: blur(12px);
-}
-
-.locationImg {
-    height: 40px;
-    width: 40px;
-}

@@ -1,24 +1,32 @@
-import styles from './page.module.css'
-import { FormEvent } from 'react';
+'use client'
+import styles from './weather.css'
+import { FormEvent, useState } from 'react';
+import WeatherSearch from '../../../components/weatherSearch/WeatherSearch.js'
+import WeatherData from '@/components/weatherData/WeatherData.js';
 
 export default function weather() {
-
-    const create = async (e) => {
-        'use server'
-        e.preventDefault();
-    }
+    const [showSearchBar, setShowSearchBar] = useState(true);
+    const [weatherData, setWeatherData] = useState(null);
     
+
+    const handleWeatherData = async (data) => {
+        const resolvedData = await data;
+        setWeatherData(resolvedData);
+        //weatherData = await data;
+        
+        console.log(weatherData);
+        setShowSearchBar(false);
+    }
     return (
-        <main className={styles.main}>
-            {/* <div className={styles.cloudContainer}>
-               <div className={styles.cloudIntro}></div>
+        <main className="main">
+            {/* <div className="cloudContainer">
+               <div className="cloudIntro"></div>
             </div> */}
-            <div className={styles.searchContainer}>
-                <form action={create}>
-                    <input id="searchInput" type="text" placeholder="Enter Location (City Name or Zip Code) or Use Current Location &#8594"></input>
-                    <button id="getLocation" type="button"><img className={styles.locationImg} src="/publicWIMBY/graphics/map-marker-alt.png"></img></button>
-                </form>
-            </div>
+            {showSearchBar ? (
+                <WeatherSearch onSearch={handleWeatherData}/>
+            ) : (
+                <WeatherData weatherData={weatherData}/>
+            )}
         </main>
     )
 }

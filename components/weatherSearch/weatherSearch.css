@@ -1,0 +1,68 @@
+
+.searchContainer {
+    /* background-image: url('/graphics/Clouds-PNG-Pic.png'); */
+    /* height: 95vh; */
+    display: flex;
+    flex-direction: row;
+    overflow: hidden;
+    align-items: center;
+    justify-content: center;
+    height: 75px;
+    min-width: 750px;
+    background-color: rgba(25,34,49,0.45);
+    backdrop-filter: blur(12px);
+    border-radius: 50px;
+    /* z-index: 2; */
+}
+
+.searchForm {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+}
+
+#searchInput {  
+    /* min-width: 620px; */
+    width: 100%;
+    height: 75px;
+    /* height: 100%; */
+    max-width: 755px;
+    background: transparent;
+    border: none;
+    margin: 10px;
+    font-size: 18px;
+}
+
+.locationImg {
+    height: 40px;
+    width: 35px;
+}
+
+#getLocation {
+    width: 60px;
+    height: 60px;
+    background-color: #985E6D;
+    border-radius: 50%;
+    border: none;
+    padding: 8px;
+    margin: 8px;
+}
+
+#getLocation:active {
+    transform: translateY(1px);
+}
+
+@media only screen and (max-width: 768px) {
+    .searchContainer {
+        min-width: 350px;
+    }
+
+    #searchInput::placeholder {
+        font-size: 12px;
+        font-weight: bold;
+    }
+
+    
+
+}
