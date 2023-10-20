@@ -1,3 +1,4 @@
+import { useState } from 'react';
 import styles from './weatherData.css'
 
 const WeatherData = ({ weatherData }) => {
@@ -13,31 +14,41 @@ const WeatherData = ({ weatherData }) => {
 
     const chooseCurrentImg = (json) => {
         let condition = json.weather[0].id;
-    if (lvl7Conditions.includes(condition)) {
-        // display thunderstorm
-        return "/publicWIMBY/graphics/1530363_weather_clouds_night_storm_icon.svg";
-    } else if (lvl6Conditions.includes(condition)) {
-        // display snow
-        return "/publicWIMBY/graphics/1530371_weather_clouds_snow_winter_icon.svg";
-    } else if (lvl5Conditions.includes(condition)) {
-        // display rain
-        return "/publicWIMBY/graphics/1530364_weather_rain_shower_storm_icon.svg";
-    } else if (lvl4Conditions.includes(condition)) {
-        // display drizzle
-        return "/publicWIMBY/graphics/1530365_weather_cloud_drizzel_rain_icon.svg";
-    } else if (lvl3Conditions.includes(condition)) {
-        // display mist
-        return "/publicWIMBY/graphics/1530368_weather_clouds_cloudy_fog_foggy_icon.svg";
-    } else if (lvl2Conditions.includes(condition)) {
-        // display heavy cloud
-        return "/publicWIMBY/graphics/1530369_weather_cloud_clouds_cloudy_icon.svg";
-    } else if (lvl1Conditions.includes(condition)) {
-        // display light cloud
-        return "/publicWIMBY/graphics/1530391_weather_clouds_sun_sunny_icon2.svg";
-    } else {
-        // display clear
-        return "/publicWIMBY/graphics/1530392_weather_sun_sunny_temperature_icon.svg";
+        if (lvl7Conditions.includes(condition)) {
+            // display thunderstorm
+            return "/publicWIMBY/graphics/1530363_weather_clouds_night_storm_icon.svg";
+        } else if (lvl6Conditions.includes(condition)) {
+            // display snow
+            return "/publicWIMBY/graphics/1530371_weather_clouds_snow_winter_icon.svg";
+        } else if (lvl5Conditions.includes(condition)) {
+            // display rain
+            return "/publicWIMBY/graphics/1530364_weather_rain_shower_storm_icon.svg";
+        } else if (lvl4Conditions.includes(condition)) {
+            // display drizzle
+            return "/publicWIMBY/graphics/1530365_weather_cloud_drizzel_rain_icon.svg";
+        } else if (lvl3Conditions.includes(condition)) {
+            // display mist
+            return "/publicWIMBY/graphics/1530368_weather_clouds_cloudy_fog_foggy_icon.svg";
+        } else if (lvl2Conditions.includes(condition)) {
+            // display heavy cloud
+            return "/publicWIMBY/graphics/1530369_weather_cloud_clouds_cloudy_icon.svg";
+        } else if (lvl1Conditions.includes(condition)) {
+            // display light cloud
+            return "/publicWIMBY/graphics/1530391_weather_clouds_sun_sunny_icon2.svg";
+        } else {
+            // display clear
+            return "/publicWIMBY/graphics/1530392_weather_sun_sunny_temperature_icon.svg";
+        }
     }
+
+    const [showDetails, setShowDetails] = useState('none');
+    const handleShowDetails = () => {
+        console.log(showDetails)
+        if (showDetails == 'none') {
+            setShowDetails('block');
+        } else {
+            setShowDetails('none');
+        }
     }
 
     return (
@@ -45,10 +56,18 @@ const WeatherData = ({ weatherData }) => {
             <div className="currentWeatherCard">
                 <img id="currentIcon" src={chooseCurrentImg(weatherData)}></img>
                 <div className='currentStack'>
-                    {console.log(weatherData)}
                     <p id='location'>{weatherData.name}</p>                    
                     <p id='currentTemp'>{Math.round(weatherData.main.temp)}°</p>
+                    <button id="showDetails" onClick={handleShowDetails}>Show Details</button>
                 </div>
+                <ul id="currentWeatherList" style={{display: showDetails}}>
+                    <li id="conditions"><p>{weatherData.weather[0].description}</p></li>
+                    <li id="feelslike">Feels Like: {Math.round(weatherData.main.feels_like)}°F</li>
+                    <li id="tempmax">High: {Math.round(weatherData.main.temp_max)}°F</li>
+                    <li id="tempmin">Low: {Math.round(weatherData.main.temp_min)}°F</li>
+                    <li id="humidity">Humidity: {weatherData.main.humidity}%</li>
+                    <li id="windspeed">Wind: {Math.round(weatherData.wind.speed)}MPH</li>
+                </ul>
             </div>
             <div className='forecast'>
                 <div className='day1'></div>

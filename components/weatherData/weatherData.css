@@ -6,13 +6,15 @@
 .currentWeatherCard {
     background-color: rgba(0, 0, 0, 0.25);
     backdrop-filter: blur(12px);
-    width: 600px;
-    height: 250px;
+    min-width: 600px;
+    min-height: 250px;
     border-radius: 12px;
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
+    flex-wrap: wrap;
+    margin: 20px;
 }
 
 .currentStack {
@@ -20,6 +22,16 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    margin: 10px;
+    min-width: 130px;
+}
+
+#showDetails {
+    font-size: 16px;
+    background-color: rgba(25,34,49,0.45);
+    border: none;
+    padding: 4px;
+    border-radius: 4px;
 }
 
 #location {
@@ -35,22 +47,38 @@
     height: 225px;
 }
 
+#currentWeatherList {
+    list-style: none;
+    margin: 10px;
+}
+
+#currentWeatherList li {
+    font-size: 18px;
+}
+
+#currentWeatherList p {
+    font-size: 22px;
+    text-align: center;
+}
+
 @media only screen and (max-width: 768px) {
     .currentWeatherCard {
-        width: 300px;
-        height: 200px;
+        min-width: 300px;
+        min-height: 200px;
+        /* margin-top: 50px; */
     }
 
     #currentIcon {
-        width: 150px;
-        height: 150px;
-    }
+        width: 350px;
+        height: 350px;
+        margin-bottom: -50px;
+    } 
 
-    #currentTemp {
+    /* #currentTemp {
         font-size: 80px;
     }
 
     #location {
         font-size: 20px;
-    }
+    }  */
 }
