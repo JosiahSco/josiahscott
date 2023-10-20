@@ -4,7 +4,7 @@ import { FormEvent, useState } from 'react';
 import WeatherSearch from '../../../components/weatherSearch/WeatherSearch.js'
 import WeatherData from '@/components/weatherData/WeatherData.js';
 
-export default function weather() {
+export default function Weather() {
     const [showSearchBar, setShowSearchBar] = useState(true);
     const [weatherData, setWeatherData] = useState(null);
     
