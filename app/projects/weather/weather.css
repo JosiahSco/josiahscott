@@ -1,5 +1,5 @@
 .weather-main {
-    min-width: 100%;
+    /* min-width: 100%; */
     min-height: 100vh;
     background-image: linear-gradient(#232f46, #49365f, #985E6D);
     z-index: 1;

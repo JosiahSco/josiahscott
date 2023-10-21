@@ -51,7 +51,7 @@ const WeatherData = ({ weatherData }) => {
     }
 
     return (
-        <div className='main'>
+        <div className='weatherDataMain'>
             <div className="currentWeatherCard">
                 <img id="currentIcon" src={chooseCurrentImg(weatherData)}></img>
                 <div className='currentStack'>

@@ -3,15 +3,17 @@ import { NextResponse } from 'next/server'
 export async function POST(request) {
     const WEATHER_KEY = process.env.WEATHER_KEY;
     const onlyNumbers = /^[0-9]*$/;
-    const onlyLetters = /^[a-zA-Z]+$/
+    const onlyLettersAndUnderScores = /^\w+$/
 
     try {
         let locationInput = await request.json();
+        locationInput = locationInput.split(' ').join('_');
         let response;
 
         if (onlyNumbers.test(locationInput)) {
             response = await fetch(`http://api.openweathermap.org/geo/1.0/zip?zip=${locationInput}&limit=5&appid=${WEATHER_KEY}`);
-        } else if (onlyLetters.test(locationInput)) {
+        } else if (onlyLettersAndUnderScores.test(locationInput)) {
+            // locationInput = locationInput.split(' ').join('_');
             response = await fetch(`http://api.openweathermap.org/geo/1.0/direct?q=${locationInput}&limit=5&appid=${WEATHER_KEY}`);
         } else {
             return NextResponse.json("Incorrect Input: use only city name OR zip code", {response: 400})
