@@ -12,11 +12,15 @@ export default function Weather() {
     const handleWeatherData = async (data) => {
         const resolvedData = await data;
         setWeatherData(resolvedData);
-        //weatherData = await data;
-        
-        console.log(weatherData);
+
+        if(weatherData === null) {
+            alert("Could not retrieve weather data");
+            return;
+        }
+
         setShowSearchBar(false);
     }
+
     return (
         <main className="weather-main">
             {/* <div className="cloudContainer">
