@@ -75,6 +75,7 @@
         width: 350px;
         height: 350px;
         margin-bottom: -50px;
+        margin-top: -50px;
     } 
 
     /* #currentTemp {

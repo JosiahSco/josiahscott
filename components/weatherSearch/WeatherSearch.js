@@ -11,6 +11,7 @@ export default function WeatherSearch({onSearch}) {
 
     const handleFormSubmit = async (e) => {
         e.preventDefault();
+        if (locationString.length < 3) return;
         try {
             const response = await fetch('/api/geo-code', {
                 method: 'POST',
@@ -45,7 +46,7 @@ export default function WeatherSearch({onSearch}) {
             </div> */}
             <div className="searchContainer">
                 <form onSubmit={handleFormSubmit} className='searchForm'>
-                    <input onChange={handleLocationChange} id="searchInput" type="text"  value={locationString} placeholder="Enter Location (City Name OR Zip Code)"></input>
+                    <input onChange={handleLocationChange} id="searchInput" type="text"  value={locationString} placeholder="Enter Location (City Name OR Zip Code)" minLength={3}></input>
                 </form>
                     <button id="getLocation" type="button" onClick={handleUseCurrentLocation}><img className="locationImg" src="/publicWIMBY/graphics/map-marker-alt.png"></img></button>
             </div>
