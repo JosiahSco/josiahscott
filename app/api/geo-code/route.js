@@ -9,18 +9,24 @@ export async function POST(request) {
         let locationInput = await request.json();
         locationInput = locationInput.split(' ').join('_');
         let response;
-
+        let lat;
+        let lon;
+        let data;
+        
         if (onlyNumbers.test(locationInput)) {
             response = await fetch(`http://api.openweathermap.org/geo/1.0/zip?zip=${locationInput}&limit=5&appid=${WEATHER_KEY}`);
+            const data = await response.json();
+            lat = data.lat;
+            lon = data.lon;
         } else if (onlyLettersAndUnderScores.test(locationInput)) {
-            // locationInput = locationInput.split(' ').join('_');
             response = await fetch(`http://api.openweathermap.org/geo/1.0/direct?q=${locationInput}&limit=5&appid=${WEATHER_KEY}`);
+            const data = await response.json();
+            lat = data[0].lat;
+            lon = data[0].lon;
         } else {
             return NextResponse.json("Incorrect Input: use only city name OR zip code", {response: 400})
         }
-        const data = await response.json();
-        const lat = data[0].lat;
-        const lon = data[0].lon;
+    
         let weatherData = await fetchWeatherData(lat, lon);
         
         return NextResponse.json(weatherData, {response: 200})
