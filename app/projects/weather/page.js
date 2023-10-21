@@ -17,8 +17,8 @@ export default function Weather() {
             alert("Could not retrieve weather data");
             return;
         }
-
         setShowSearchBar(false);
+
     }
 
     return (

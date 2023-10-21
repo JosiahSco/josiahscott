@@ -96,7 +96,12 @@
     padding: 10px 0;
 }
 
+hr {
+    display: none;
+}
+
 @media (max-width: 768px) {
+
     .navigation {
         align-items: flex-start;
         justify-content: space-between;
@@ -120,6 +125,14 @@
     .nav-links.closed {
         display: none;
     }
+
+    hr {
+        display: block;
+        width: 100%;
+        background-color: white;
+        height: 3px;
+        border-radius: 2px;
+    }
     
 }
 
@@ -135,3 +148,4 @@
     height: 30px;
     width: 25px;
 }
+

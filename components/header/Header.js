@@ -53,15 +53,19 @@ export default function Header() {
               <li>
                   <Link href={'/'} id="homeLink">Home</Link>
               </li>
+              <hr></hr>
               <li>
                   <Link href={'/resume'} id='resumeLink'>Resume</Link>
               </li>
+              <hr></hr>
               <li>
                   <Link href={'/projects'} id="projectsLink">Projects</Link>
               </li>
+              <hr></hr>
               <li>
                   <Link href={'/blog'} id="blogLink">Blog</Link>
               </li>
+              <hr></hr>
               <li>
                   <Link href={'/contact-me'} id="contactMeLink">
                       Contact

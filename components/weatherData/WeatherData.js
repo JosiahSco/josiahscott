@@ -48,6 +48,16 @@ const WeatherData = ({ weatherData }) => {
         } else {
             setShowDetails('none');
         }
+        handleDetailsButtonText();
+    }
+
+    const [detailsButtonText, setDetailsButtonText] = useState('Show');
+    const handleDetailsButtonText = () => {
+        if (detailsButtonText == 'Show') {
+            setDetailsButtonText('Hide');
+        } else {
+            setDetailsButtonText('Show');
+        }
     }
 
     return (
@@ -57,7 +67,7 @@ const WeatherData = ({ weatherData }) => {
                 <div className='currentStack'>
                     <p id='location'>{weatherData.name}</p>                    
                     <p id='currentTemp'>{Math.round(weatherData.main.temp)}°</p>
-                    <button id="showDetails" onClick={handleShowDetails}>Show Details</button>
+                    <button id="showDetails" onClick={handleShowDetails}>{detailsButtonText} Details</button>
                 </div>
                 <ul id="currentWeatherList" style={{display: showDetails}}>
                     <li id="conditions"><p>{weatherData.weather[0].description}</p></li>
