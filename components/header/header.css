@@ -11,7 +11,7 @@
     z-index: 3;
     width: 100%;
     font-size: 22px; 
-    background-color: #859098;
+    background-color: #2b353d;
     display: flex;
     flex-direction: row; /* Change to a column layout for small screens */
     justify-content: flex-start;
@@ -80,7 +80,7 @@
     width: 100%;
     text-align: center;
     display: block;
-    background-color: #859098;
+    background-color: #2b353d;
     position: fixed;
     top: 55px; 
     left: 0;
