@@ -8,7 +8,6 @@ export default async function Cinema() {
 
     async function getVideoIds() {
         const playlistItems = await fetchPlaylistData(PLAYLIST_ID);
-        //console.log(playlistItems.map((item) => item.snippet.resourceId.videoId))
         return playlistItems.map((item) => item.snippet.resourceId.videoId);
     }
 

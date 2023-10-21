@@ -13,7 +13,7 @@ export default function Weather() {
         const resolvedData = await data;
         setWeatherData(resolvedData);
 
-        if(weatherData === null) {
+        if(resolvedData === null) {
             alert("Could not retrieve weather data");
             return;
         }

@@ -11,7 +11,6 @@ export default function WeatherSearch({onSearch}) {
 
     const handleFormSubmit = async (e) => {
         e.preventDefault();
-        console.log(locationString)
         if (locationString.length < 3) return;
         try {
             const response = await fetch('/api/geo-code', {
