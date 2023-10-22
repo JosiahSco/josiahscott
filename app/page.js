@@ -53,7 +53,7 @@ export default function Home() {
           I am currently working part time as a developer for Hobby Lobby developing frontend functional tests with
           Playwright, and load tests with Locust.
         </p>
-        <p>I intend to use this website to show off my projects, and blog about my progress as well as development topics that interest me.</p>
+        <p>I intend to use this website to show off my projects, and write about my progress as well as development topics that interest me.</p>
         <p>Check out my projects, blog posts, or send me a message.</p>
       <div className='bottom-row'>
         <div className='interests'>

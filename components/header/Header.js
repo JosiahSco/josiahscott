@@ -72,7 +72,7 @@ export default function Header() {
                   </Link>
               </li>
           </ul>
-          <button className='dark-mode-toggle'><img src='/moon-solid.svg' className='moon'></img></button>
+          {/* <button className='dark-mode-toggle'><img src='/moon-solid.svg' className='moon'></img></button> */}
         </nav>
     )
 }

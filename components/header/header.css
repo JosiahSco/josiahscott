@@ -96,7 +96,7 @@
     padding: 10px 0;
 }
 
-hr {
+.navigation hr {
     display: none;
 }
 
@@ -126,12 +126,18 @@ hr {
         display: none;
     }
 
-    hr {
+    .navigation hr {
         display: block;
         width: 100%;
         background-color: white;
         height: 3px;
         border-radius: 2px;
+    }
+
+    .navigation .name {
+        position: absolute;
+        left: 20%;
+        top: 30%;
     }
     
 }

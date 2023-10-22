@@ -48,7 +48,7 @@ main {
     margin: 4px;
 }
 
-hr {
+.page hr {
     height: 1px;
     width: 100%;
     color: white;
