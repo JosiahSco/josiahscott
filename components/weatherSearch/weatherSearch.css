@@ -13,6 +13,7 @@
     backdrop-filter: blur(12px);
     border-radius: 50px;
     /* z-index: 2; */
+    box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.25);
 }
 
 .searchForm {
@@ -36,7 +37,8 @@
 
 .locationImg {
     height: 40px;
-    width: 35px;
+    width: 40px;
+    padding: 2px;
 }
 
 #getLocation {
@@ -45,7 +47,7 @@
     background-color: #985E6D;
     border-radius: 50%;
     border: none;
-    padding: 8px;
+    padding: 10px;
     margin: 8px;
 }
 
@@ -59,10 +61,8 @@
     }
 
     #searchInput::placeholder {
-        font-size: 12px;
+        font-size: 11px;
         font-weight: bold;
     }
-
     
-
 }
