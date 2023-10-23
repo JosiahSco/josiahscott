@@ -132,7 +132,7 @@ const WeatherData = ({ weatherData }) => {
                     <button id="showDetails" onClick={handleShowDetails}>{detailsButtonText} Details</button>
                 </div>
                 <ul id="currentWeatherList" style={{display: showDetails}}>
-                    <li id="conditions"><p>{currentData.weather[0].description}</p></li>
+                    <li id="conditions"><p id='currentDescription'>{currentData.weather[0].description}</p></li>
                     <li id="feelslike">Feels Like: {Math.round(currentData.main.feels_like)}°F</li>
                     <li id="tempmax">High: {Math.round(currentData.main.temp_max)}°F</li>
                     <li id="tempmin">Low: {Math.round(currentData.main.temp_min)}°F</li>

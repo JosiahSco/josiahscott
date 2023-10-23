@@ -47,8 +47,9 @@
 }
 
 #currentIcon {
-    width: 225px;
-    height: 225px;
+    width: 350px;
+    height: 350px;
+    margin: -30px;
 }
 
 #currentWeatherList {
@@ -57,12 +58,13 @@
 }
 
 #currentWeatherList li {
-    font-size: 18px;
+    font-size: 24px;
 }
 
-#currentWeatherList p {
-    font-size: 22px;
+#conditions p {
     text-align: center;
+    font-size: 26px;
+    text-transform: capitalize;
 }
 
 @media only screen and (max-width: 768px) {
@@ -78,14 +80,6 @@
         margin-bottom: -50px;
         margin-top: -50px;
     } 
-
-    /* #currentTemp {
-        font-size: 80px;
-    }
-
-    #location {
-        font-size: 20px;
-    }  */
 }
 
 .forecast {
