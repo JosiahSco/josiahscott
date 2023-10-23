@@ -36,7 +36,7 @@ export default function Resume() {
                 <div className="experience">
                     <h2>Experience</h2>
                     <div className="space-between-container">
-                        <h4>Software Developer Intern - Hobby Lobby</h4>
+                        <h4>Software Developer Intern: Hobby Lobby</h4>
                         <p>May 2023 - Present</p>
                     </div>
                     <ul>
@@ -63,7 +63,7 @@ export default function Resume() {
                     </ul>
                     <br></br>
                     <div className="space-between-container">
-                        <h4>Python Supplemental Instructor - UCO</h4>
+                        <h4>Python Supplemental Instructor: UCO</h4>
                         <p>January 2023 - May 2023</p>
                     </div>
                     <ul>
@@ -81,7 +81,7 @@ export default function Resume() {
                     </ul>
                     <br></br>
                     <div className="space-between-container">
-                        <h4>C++ Teachers Assistant - UCO</h4>
+                        <h4>C++ Teachers Assistant: UCO</h4>
                         <p>January 2023 - May 2023</p>
                     </div>
                     <ul>
