@@ -25,20 +25,20 @@ export default function Weather() {
         <main className="weather-main">
             
             <div id="background-wrap">
-                <div class="x1">
-                    <div class="cloud"></div>
+                <div className="x1">
+                    <div className="cloud"></div>
                 </div>
-                <div class="x2">
-                    <div class="cloud"></div>
+                <div className="x2">
+                    <div className="cloud"></div>
                 </div>
-                <div class="x3">
-                    <div class="cloud"></div>
+                <div className="x3">
+                    <div className="cloud"></div>
                 </div>
-                <div class="x4">
-                    <div class="cloud"></div>
+                <div className="x4">
+                    <div className="cloud"></div>
                 </div>
-                <div class="x5">
-                    <div class="cloud"></div>
+                <div className="x5">
+                    <div className="cloud"></div>
                 </div>
             </div>
 

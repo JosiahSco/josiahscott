@@ -19,6 +19,8 @@
     flex-wrap: wrap;
     margin: 20px;
     box-shadow: 2px 4px 4px rgba(0, 0, 0, 0.50);
+    animation-name: fadeIn;
+    animation-duration: 1s;
 }
 
 .currentStack {
@@ -125,3 +127,43 @@
         min-width: 350px;
     }
 }
+
+.day {
+    opacity: 0;
+    animation-name: fadeIn;
+    animation-duration: 1.5s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+}
+
+#day1 {
+    animation-delay: 0.33s
+}
+
+#day2 {
+    animation-delay: 0.66s;
+}
+
+#day3 {
+    animation-delay: 1s;
+}
+
+#day4 {
+    animation-delay: 1.33s;
+}
+
+#day5 {
+    animation-delay: 1.66s;
+}
+
+@keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    
+    to {
+      opacity: 1;
+    }
+}
+
+

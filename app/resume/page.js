@@ -12,20 +12,20 @@ export default function Resume() {
                     width={75}
                 />
             </Link>
-            <div class="page">
-                <div class="head">
+            <div className="page">
+                <div className="head">
                     <h1>Josiah Scott</h1>
                     <h3>josiah.scott.d@gmail.com - Edmond, Oklahoma</h3>
                     <h3><a href="https://josiahscott.dev">josiahscott.dev</a></h3>
                 </div>
                 <hr />
-                <div class="education">
+                <div className="education">
                     <h2>Education</h2>
-                    <div class="space-between-container">
+                    <div className="space-between-container">
                         <h4>University of Central Oklahoma</h4>
                         <p>Fall 2021 - Spring 2025</p>
                     </div>
-                    <div class="education-info">
+                    <div className="education-info">
                         <p>Computer Science</p>
                         <p>GPA: 3.88</p>
                         <p>Presidents Honor Roll</p>
@@ -33,9 +33,9 @@ export default function Resume() {
                     <br />
                 </div>
                 <hr />
-                <div class="experience">
+                <div className="experience">
                     <h2>Experience</h2>
-                    <div class="space-between-container">
+                    <div className="space-between-container">
                         <h4>Software Developer Intern - Hobby Lobby</h4>
                         <p>May 2023 - Present</p>
                     </div>
@@ -62,7 +62,7 @@ export default function Resume() {
                         </li>
                     </ul>
                     <br></br>
-                    <div class="space-between-container">
+                    <div className="space-between-container">
                         <h4>Python Supplemental Instructor - UCO</h4>
                         <p>January 2023 - May 2023</p>
                     </div>
@@ -80,7 +80,7 @@ export default function Resume() {
                         </li>
                     </ul>
                     <br></br>
-                    <div class="space-between-container">
+                    <div className="space-between-container">
                         <h4>C++ Teachers Assistant - UCO</h4>
                         <p>January 2023 - May 2023</p>
                     </div>
@@ -98,7 +98,7 @@ export default function Resume() {
                     <br />
                 </div>
                 <hr />
-                <div class="skills">
+                <div className="skills">
                     <h2>Skills</h2>
                     <p><b>Frontend:</b> JavaScript, TypeScript, React, Next.js, Bootstrap, HTML, CSS</p>
                     <p><b>Backend:</b> Node.js, RESTful APIs, GraphQL, Firebase</p>
@@ -108,9 +108,9 @@ export default function Resume() {
                 </div>
                 <br />
                 <hr />
-                <div class="classes">
+                <div className="classNamees">
                     <h2>Relevent Courses</h2>
-                    <div class="space-between-container">
+                    <div className="space-between-container">
                         <h4>Cloud Web Apps Development</h4>
                         <p>Fall 2023</p>
                     </div>
@@ -127,7 +127,7 @@ export default function Resume() {
                         </li>
                     </ul>
                     <br />
-                    <div class="space-between-container">
+                    <div className="space-between-container">
                         <h4>Data Structures & Algorithms</h4>
                         <p>Fall 2023</p>
                     </div>
@@ -146,7 +146,7 @@ export default function Resume() {
                         </li>
                     </ul>
                     <br />
-                    <div class="space-between-container">
+                    <div className="space-between-container">
                         <h4>Object Oriented Software Design</h4>
                         <p>Fall 2022</p>
                     </div>
