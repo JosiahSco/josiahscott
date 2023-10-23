@@ -103,7 +103,6 @@
 @media (max-width: 768px) {
 
     .navigation {
-        align-items: flex-start;
         justify-content: space-between;
     }
 
@@ -135,9 +134,11 @@
     }
 
     .navigation .name {
-        position: absolute;
-        left: 22%;
-        top: 30%;
+        width: 100%;
+        flex: 1;
+        margin: 0;
+        margin-left: -29px;
+        text-align: center;
     }
     
 }
