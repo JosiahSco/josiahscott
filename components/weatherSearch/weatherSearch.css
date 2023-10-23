@@ -9,7 +9,7 @@
     justify-content: center;
     height: 75px;
     min-width: 750px;
-    background-color: rgba(25,34,49,0.45);
+    background-color: rgba(25,34,49,0.9);
     backdrop-filter: blur(12px);
     border-radius: 50px;
     /* z-index: 2; */
