@@ -69,7 +69,7 @@
     .currentWeatherCard {
         min-width: 300px;
         min-height: 200px;
-        /* margin-top: 50px; */
+        margin-top: 100px;
     }
 
     #currentIcon {
@@ -86,4 +86,46 @@
     #location {
         font-size: 20px;
     }  */
+}
+
+.forecast {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.day {
+    background-color: rgba(25,34,49,0.45);
+    box-shadow: 2px 4px 4px rgba(0, 0, 0, 0.50);
+    border-radius: 12px;
+    min-width: 250px;
+    height: 250px;
+    margin: 20px;
+}
+
+.day p {
+    text-align: center;
+    font-size: 32px;
+    margin-top: 10px;
+}
+
+.dayForecastData {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.dayForecastData img {
+    margin: -40px;
+    width: 225px;
+}
+
+@media only screen and (max-width: 768px) {
+
+    .day {
+        min-width: 350px;
+    }
 }

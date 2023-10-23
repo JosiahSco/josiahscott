@@ -204,7 +204,7 @@ function fillForecast(json) {
     for (let i = 0; i < 5; i++) {
         let min = 999;
         let max = -999;
-        let conditions = []
+        let conditions = [];
         for (let j = i * 8; j < (i * 8 + 8); j++) {
             if (json.list[j].main.temp_min < min) {
                 min = json.list[j].main.temp_min;

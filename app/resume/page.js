@@ -15,7 +15,7 @@ export default function Resume() {
             <div class="page">
                 <div class="head">
                     <h1>Josiah Scott</h1>
-                    <h3>josiah.scott.d@gmail.com - (405) 880-9168 - Edmond, Oklahoma</h3>
+                    <h3>josiah.scott.d@gmail.com - Edmond, Oklahoma</h3>
                     <h3><a href="https://josiahscott.dev">josiahscott.dev</a></h3>
                 </div>
                 <hr />

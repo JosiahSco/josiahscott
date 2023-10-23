@@ -38,7 +38,15 @@ export async function POST(request) {
 
 const fetchWeatherData = async (lat, lon) => {
     const WEATHER_KEY = process.env.WEATHER_KEY;
-    const response = await fetch(`https://api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${lon}&units=imperial&appid=${WEATHER_KEY}`);
-    const data = await response.json();
-    return data;
+
+    let dataArray = [];
+    let response = await fetch(`https://api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${lon}&units=imperial&appid=${WEATHER_KEY}`);
+    const currentData = await response.json();
+    dataArray.push(currentData);
+
+    response = await fetch(`https://api.openweathermap.org/data/2.5/forecast?lat=${lat}&lon=${lon}&units=imperial&appid=${WEATHER_KEY}`);
+    const forecastData = await response.json();
+    dataArray.push(forecastData);
+
+    return dataArray;
 }
