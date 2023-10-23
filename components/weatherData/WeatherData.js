@@ -72,6 +72,7 @@ const WeatherData = ({ weatherData }) => {
 
 
     useEffect(() => {
+        window.scrollTo(0,0);
         const d = new Date();
         const currentDayOfMonth = d.getDate();
         const days = document.querySelectorAll('.dayForecastData');
