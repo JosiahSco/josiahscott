@@ -134,6 +134,7 @@
     }
 
     .navigation .name {
+        z-index: -1;
         width: 100%;
         flex: 1;
         margin: 0;
