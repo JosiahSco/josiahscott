@@ -87,7 +87,7 @@
 }
 
 .nav-links li:active {
-    transform: translateY(2px);
+    transform: translateY(1px);
 }
 
 .nav-links.open {
