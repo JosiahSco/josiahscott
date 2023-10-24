@@ -24,14 +24,14 @@ export async function POST(request) {
             lat = data[0].lat;
             lon = data[0].lon;
         } else {
-            return NextResponse.json("Incorrect Input: use only city name OR zip code", {response: 400})
+            return NextResponse.json({responseCode: 400});
         }
     
         let weatherData = await fetchWeatherData(lat, lon);
         
-        return NextResponse.json(weatherData, {response: 200})
+        return NextResponse.json(weatherData, {responseCode: 200});
     } catch (error) {
-        return NextResponse.json("Could not fetch weather data", {response: 500})
+        return NextResponse.json({responseCode: 500});
     }
 
 }

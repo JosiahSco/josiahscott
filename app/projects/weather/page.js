@@ -1,6 +1,6 @@
 'use client'
 import styles from './weather.css'
-import { FormEvent, useState } from 'react';
+import { useState } from 'react';
 import WeatherSearch from '../../../components/weatherSearch/WeatherSearch.js'
 import WeatherData from '@/components/weatherData/WeatherData.js';
 
@@ -12,12 +12,12 @@ export default function Weather() {
     const handleWeatherData = async (data) => {
         const resolvedData = await data;
         setWeatherData(resolvedData);
-
-        if(resolvedData === null) {
+        console.log(resolvedData)
+        if(resolvedData.length == 0 && Array.isArray(resolvedData)) {
             alert("Could not retrieve weather data");
+            setShowSearchBar(false);
             return;
         }
-        setShowSearchBar(false);
 
     }
 
