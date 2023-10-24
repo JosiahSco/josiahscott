@@ -16,7 +16,7 @@
     flex-direction: row; /* Change to a column layout for small screens */
     justify-content: flex-start;
     align-items: center;
-    padding: 10px;
+    padding: 15px;
     z-index: 3;
     position: fixed;
     top: 0;
@@ -99,7 +99,7 @@
     display: block;
     background-color: #222a31;
     position: fixed;
-    top: 55px; 
+    top: 50px; 
     left: 0;
     right: 0;
     padding: 5px;
