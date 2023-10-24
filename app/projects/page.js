@@ -7,7 +7,7 @@ export default function Projects() {
             <Link href={'/projects/weather'} className="card">
                 <div className="wimby">
                     <h1>
-                        ☁WIMBY
+                        ☁Weather
                     </h1>
                 </div>
             </Link>
