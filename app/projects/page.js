@@ -1,18 +1,18 @@
-import styles from './page.module.css'
+import styles from './projects.css'
 import Link from 'next/link'
 
 export default function Projects() {
     return (
-        <main className={styles.main}>
-            <Link href={'/projects/weather'} className={styles.card}>
-                <div className={styles.wimby}>
+        <main className="projectMain">
+            <Link href={'/projects/weather'} className="card">
+                <div className="wimby">
                     <h1>
                         ☁WIMBY
                     </h1>
                 </div>
             </Link>
-            <Link href={'/projects'} className={styles.card}>
-                <div className={styles.comingSoon}>
+            <Link href={'/projects'} className="card">
+                <div className="comingSoon">
                     <h1>
                         More Coming Soon...
                     </h1>
