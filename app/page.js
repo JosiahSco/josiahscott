@@ -12,11 +12,11 @@ export default function Home() {
       <div className='profile'>
         <div className='pic-holder' id='pic-holder'>
           {/* <Image
-          src="/temp-profile3.jpg"
-          width={400}
-          height={400}
-          alt="Picture of the author"
-        /> */}
+            src="/temp-profile.png"
+            width={350}
+            height={350}
+            alt="Picture of the author"
+          /> */}
         <img src='temp-profile.png' className='pfp' id='pfp'></img>
         </div>
         <div className='links'>
