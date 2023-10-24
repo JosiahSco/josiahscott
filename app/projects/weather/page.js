@@ -12,13 +12,13 @@ export default function Weather() {
     const handleWeatherData = async (data) => {
         const resolvedData = await data;
         setWeatherData(resolvedData);
-        console.log(resolvedData)
-        if(resolvedData.length == 0 && Array.isArray(resolvedData)) {
+
+        if(resolvedData == null) {
             alert("Could not retrieve weather data");
-            setShowSearchBar(false);
             return;
         }
-
+        
+        setShowSearchBar(false);
     }
 
     return (
