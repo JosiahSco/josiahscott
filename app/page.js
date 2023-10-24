@@ -79,7 +79,6 @@ export default function Home() {
         </div>
       </div>
       </div>
-      <div id='lastUpdated'><LastUpdated></LastUpdated></div>
     </main>
   )
 }

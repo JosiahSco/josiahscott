@@ -1,4 +1,5 @@
 'use client'
+import styles from './lastUpdated.css'
 import { Octokit } from "@octokit/core";
 import { useEffect } from "react";
 

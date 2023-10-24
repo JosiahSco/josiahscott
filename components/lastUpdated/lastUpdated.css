@@ -1,0 +1,11 @@
+#lastUpdatedWrapper {
+    width: 100%;
+    padding: 4px;
+    text-align: center;
+    background-color: #222a31;
+    box-shadow: 0 -5px 0 rgba(0,0,0,0.1);
+    position: fixed;
+    bottom: 0;
+    font-size: 18px;
+    text-decoration: underline;
+  }

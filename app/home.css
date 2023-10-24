@@ -139,13 +139,3 @@
   flex-wrap: wrap;
 }
 
-#lastUpdated {
-  width: 100%;
-  padding: 4px;
-  text-align: center;
-  background-color: #222a31;
-  position: fixed;
-  bottom: 0;
-  font-size: 18px;
-  text-decoration: underline;
-}
