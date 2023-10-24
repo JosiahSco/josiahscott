@@ -64,10 +64,12 @@ const WeatherData = ({ weatherData }) => {
     }
 
     const days = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
+    // const days = []
     const getDayString = (dayNum) => {
         const date = new Date();
         const day = date.getDay();
-        return days[dayNum + day];
+        // return days[dayNum + day];
+        return days[(dayNum + day) % 7];
     }
 
 
