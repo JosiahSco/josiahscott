@@ -2,8 +2,11 @@ import Image from 'next/image'
 // import styles from './page.module.css'
 import Header from '@/components/header/Header'
 import styles from './home.css'
+import LastUpdated from '@/components/lastUpdated/LastUpdated'
 
 export default function Home() {
+
+
   return (
     <main className="main">
       <div className='profile'>
@@ -76,6 +79,7 @@ export default function Home() {
         </div>
       </div>
       </div>
+      <div id='lastUpdated'><LastUpdated></LastUpdated></div>
     </main>
   )
 }
