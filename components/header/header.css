@@ -86,9 +86,15 @@
     transform: none;
 }
 
+.link {
+    width: 100%;
+}
+
 .nav-links li:active {
     transform: translateY(1px);
+    box-shadow: none;
 }
+
 
 .nav-links.open {
     width: 100%;

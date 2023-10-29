@@ -79,10 +79,12 @@ const WeatherData = ({ weatherData }) => {
         const currentDayOfMonth = d.getDate();
         const days = document.querySelectorAll('.dayForecastData');
         for(let i = 0; i < days.length; i++) {
+            const targetDate = new Date(d);
+            targetDate.setDate(currentDayOfMonth + i + 1);
             let matchingData = forecastData.list.filter(dataPoint => {
-                return dataPoint.dt_txt.substring(8,10) == (currentDayOfMonth + i + 1);
+                return dataPoint.dt_txt.substring(8,10) == targetDate.getDate();
             });
-    
+            
             let low = 999;
             let high = -999;
             let conditions = [];

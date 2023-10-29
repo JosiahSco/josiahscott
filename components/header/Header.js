@@ -51,23 +51,23 @@ export default function Header() {
           <Link href={'/'} className='name'>Josiah Scott</Link>
           <ul className={`nav-links ${isMenuOpen ? 'open' : 'closed'}`}>
               <li>
-                  <Link href={'/'} id="homeLink">Home</Link>
+                  <Link href={'/'} id="homeLink" className='link'>Home</Link>
               </li>
               <hr></hr>
               <li>
-                  <Link href={'/resume'} id='resumeLink'>Resume</Link>
+                  <Link href={'/resume'} id='resumeLink' className='link'>Resume</Link>
               </li>
               <hr></hr>
               <li>
-                  <Link href={'/projects'} id="projectsLink">Projects</Link>
+                  <Link href={'/projects'} id="projectsLink" className='link'>Projects</Link>
               </li>
               <hr></hr>
               <li>
-                  <Link href={'/blog'} id="blogLink">Blog</Link>
+                  <Link href={'/blog'} id="blogLink" className='link'>Blog</Link>
               </li>
               <hr></hr>
               <li>
-                  <Link href={'/contact-me'} id="contactMeLink">Contact</Link>
+                  <Link href={'/contact-me'} id="contactMeLink" className='link'>Contact</Link>
               </li>
           </ul>
           {/* <button className='dark-mode-toggle'><img src='/moon-solid.svg' className='moon'></img></button> */}
