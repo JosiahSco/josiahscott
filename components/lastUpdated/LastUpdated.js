@@ -19,7 +19,6 @@ export default function LastUpdated() {
                     'GET /repos/JosiahSco/josiahscott/commits',
                     {owner: 'JosiahSco', repo: 'josiahscott', per_page: 1}
                 );
-                console.log(commit);
                 const date = new Date(commit.data[0].commit.author.date);
                 const dateFormatted = new Intl.DateTimeFormat("en-US", {
                     year: "numeric",

@@ -1,9 +1,13 @@
 'use client'
 import styles from './weatherSearch.css'
-import { FormEvent, useState } from 'react';
+import { FormEvent, useEffect, useState } from 'react';
 
 export default function WeatherSearch({onSearch}) {
     const [locationString, setLocationString] = useState('')
+
+    useEffect(() => {
+        window.scrollTo(0,0);
+    }, [])
 
     const handleLocationChange = (e) => {
         setLocationString(e.target.value)

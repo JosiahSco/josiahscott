@@ -125,6 +125,24 @@ const WeatherData = ({ weatherData }) => {
             days[i].appendChild(p);
         }
     }, []);
+
+    useEffect(() => {
+        let high = -999;
+        let low = 999;
+        const currentDate = new Date()
+
+        const todaysData = forecastData.list.filter(dataPoint => {
+            return dataPoint.dt_txt.substring(8,10) == currentDate.getDate();
+        });
+
+        todaysData.forEach(dataPoint => {
+            if (dataPoint.main.temp_max > high) high = dataPoint.main.temp_max;
+            if (dataPoint.main.temp_min < low) low = dataPoint.main.temp_min;
+        });
+
+        document.querySelector('#tempmax').innerHTML = `High: ${Math.round(high)}°F`
+        document.querySelector('#tempmin').innerHTML = `Low: ${Math.round(low)}°F`
+    }, []);
     
 
     return (
@@ -139,8 +157,8 @@ const WeatherData = ({ weatherData }) => {
                 <ul id="currentWeatherList" style={{display: showDetails}}>
                     <li id="conditions"><p id='currentDescription'>{currentData.weather[0].description}</p></li>
                     <li id="feelslike">Feels Like: {Math.round(currentData.main.feels_like)}°F</li>
-                    <li id="tempmax">High: {Math.round(currentData.main.temp_max)}°F</li>
-                    <li id="tempmin">Low: {Math.round(currentData.main.temp_min)}°F</li>
+                    <li id="tempmax"></li>
+                    <li id="tempmin"></li>
                     <li id="humidity">Humidity: {currentData.main.humidity}%</li>
                     <li id="windspeed">Wind: {Math.round(currentData.wind.speed)}MPH</li>
                 </ul>
