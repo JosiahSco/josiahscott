@@ -127,8 +127,8 @@ const WeatherData = ({ weatherData }) => {
     }, []);
 
     useEffect(() => {
-        let high = -999;
-        let low = 999;
+        let high = currentData.main.temp_max;
+        let low = currentData.main.temp_min;
         const currentDate = new Date()
 
         const todaysData = forecastData.list.filter(dataPoint => {
