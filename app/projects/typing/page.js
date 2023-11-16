@@ -165,7 +165,11 @@ export default function Typing() {
                 <div className='wordBank'>
                     {characterSpans}
                 </div>
-                <textarea className='inputBox' onPaste={handlePaste} onChange={handleTyping} placeholder='Start Typing...'></textarea>
+                <textarea 
+                 className='inputBox' onPaste={handlePaste} onChange={handleTyping} placeholder='Start Typing...' 
+                 autoFocus autoCapitalize='off' autoCorrect='off' spellCheck='false'
+                >
+                </textarea>
                 <button className='reset' onClick={handleReset}>Reset</button>
                 <button className='retry' onClick={handleRetry}>Retry</button>
             </div>
