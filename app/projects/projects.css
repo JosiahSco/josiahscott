@@ -1,9 +1,10 @@
 .projectMain {
     display: flex;
     flex-direction: row;
-    justify-content: space-evenly;
+    justify-content: center;
     flex-wrap: wrap;
     align-items: center;
+    align-content: center;
     padding: 6rem;
     min-height: 100vh;
     min-width: 100vw;
@@ -37,6 +38,19 @@
     align-items: center;
     justify-content: center;
     box-shadow: 0 4px 8px rgba(0,0,0,0.5);
+}
+
+.typing {
+    width: 500px;
+    height: 300px;
+    border: solid 4px white;
+    border-radius: 20px;
+    background-color: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.5);
+    font-size: 32px;
 }
 
 .wimby:hover {

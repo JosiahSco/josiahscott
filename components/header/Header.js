@@ -70,7 +70,6 @@ export default function Header() {
                   <Link href={'/contact-me'} id="contactMeLink" className='link'>Contact</Link>
               </li>
           </ul>
-          {/* <button className='dark-mode-toggle'><img src='/moon-solid.svg' className='moon'></img></button> */}
         </nav>
     )
 }

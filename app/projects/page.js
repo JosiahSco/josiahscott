@@ -11,6 +11,13 @@ export default function Projects() {
                     </h1>
                 </div>
             </Link>
+            <Link href={'/projects/typing'} className="card">
+                <div className="typing">
+                    <h1>
+                        Typing
+                    </h1>
+                </div>
+            </Link>
             <Link href={'/projects'} className="card">
                 <div className="comingSoon">
                     <h1>
