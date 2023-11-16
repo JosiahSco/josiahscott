@@ -51,7 +51,7 @@ label {
     align-content: center;
     align-items: center;
     font-size: 24px;
-    margin: 0 12px 0 10px;
+    margin: 0 12px 0 4px;
 }
 
 input[type="radio"] {
@@ -133,8 +133,8 @@ hr {
 
 @media only screen and (max-width: 1050px) {
     .typingMain {
-        margin-top: 30px;
-        margin-bottom: 0px;
+        margin-top: 35px;
+        margin-bottom: 10px;
     }
 
     .infoRow p, .infoRow label {
@@ -160,6 +160,10 @@ hr {
     .statistics {
         justify-content: flex-start;
         margin-left: 4px;
+    }
+
+    label {
+        margin-bottom: -5px;
     }
 
     .accuracy {
