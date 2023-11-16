@@ -41,19 +41,18 @@ export default function Typing() {
         e.target.parentElement.disabled = true;
         setNumWords(e.target.parentElement.innerText);
 
-        if (finished) {
-            const textarea = document.querySelector('textarea');
-            textarea.disabled = false;
-            textarea.value = '';
-            document.querySelectorAll('.correct').forEach(char => {
-                char.classList.remove('correct');
-            });
+        const textarea = document.querySelector('textarea');
+        textarea.disabled = false;
+        textarea.value = '';
+        document.querySelectorAll('.correct').forEach(char => {
+            char.classList.remove('correct');
+        });
 
-            document.querySelectorAll('.incorrect').forEach(char => {
-                char.classList.remove('incorrect');
-            });
-            setFinished(false);
-        }
+        document.querySelectorAll('.incorrect').forEach(char => {
+            char.classList.remove('incorrect');
+        });
+        setFinished(false);
+        setStarted(false);
     }
 
     const handleTyping = (e) => {
