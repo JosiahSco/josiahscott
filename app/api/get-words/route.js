@@ -1,8 +1,15 @@
-import { NextResponse } from 'next/server'
+import { NextResponse } from 'next/server';
+import { get } from '@vercel/edge-config';
+
+// export const config = { matcher: '/get-words'}
 
 export async function POST(request) {
     let numWords = await request.json();
-    let response = await fetch(`https://random-word-api.vercel.app/api?words=${numWords}`);
-    let data = await response.json();
-    return NextResponse.json(data);
+
+    const allWords = await get('words');
+    let selectedWords = [];
+    for (let i = 0; i < numWords; i++) {
+        selectedWords.push(allWords[Math.floor(Math.random() * allWords.length)])
+    }
+    return NextResponse.json(selectedWords);
 }
