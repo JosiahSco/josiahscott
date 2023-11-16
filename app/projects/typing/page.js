@@ -124,7 +124,7 @@ export default function Typing() {
 
     useEffect(() => {
         document.querySelector('label#defaultNumWords').classList.add('checked');
-        document.querySelector('label#defaultNumWords').disabled = true;
+        document.querySelector('label#defaultNumWords input').disabled = true;
         document.querySelector('.retry').disabled = true;
         document.querySelector('.retry').classList.add('buttonDisabled');
     }, []);
