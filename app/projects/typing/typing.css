@@ -68,6 +68,7 @@ input[type="radio"] {
 .infoRow p {
     display: flex;
     align-items: center;
+    align-content: center;
     justify-content: flex-end;
     font-size: 24px;
     text-align: end;
@@ -104,6 +105,10 @@ input[type="radio"] {
     .typingMain {
         margin-top: 30px;
         margin-bottom: 0px;
+    }
+
+    .infoRow p, .infoRow label {
+        font-size: 19px;
     }
 
     .wrapper {

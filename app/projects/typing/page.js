@@ -62,11 +62,16 @@ export default function Typing() {
     }
 
     const testComplete = () => {
-        console.log("finished");
         const timeElapsed = Date.now() - timeStarted;
-        const wpm = document.querySelector('.infoRow p');
+
+        const wpm = document.querySelector('.wpm');
+        wpm.innerText = `WPM: ${Math.round(numWords / (timeElapsed / 1000) * 60)}`;
+
+        const accuracy = document.querySelector('.accuracy');
+        const numCorrect = document.querySelectorAll('.correct').length;
+        accuracy.innerText = `🎯 ${Math.round(numCorrect / (characterSpans.length - 1) * 100)}%`
+
         document.querySelector('textarea').disabled = true;
-        wpm.innerText = `WPM: ${Math.round(numWords / (timeElapsed / 1000) * 60)}`
     }
 
     const handleRetry = () => {
@@ -151,7 +156,8 @@ export default function Typing() {
                             100    
                         </label>
                     </div>
-                    <p>WPM: XX</p>
+                    <p className='accuracy'>🎯 XX%</p>
+                    <p className='wpm'>WPM: XX</p>
                 </div>
                 <div className='wordBank'>
                     {characterSpans}
