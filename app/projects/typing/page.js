@@ -7,6 +7,7 @@ export default function Typing() {
     let [characterSpans, setCharacterSpans] = useState();
     let [numWords, setNumWords] = useState(25);
     let [started, setStarted] = useState(false);
+    let [finished, setFinished] = useState(false);
     let [timeStarted, setTimeStarted] = useState(0);
 
     useEffect(() => {
@@ -34,11 +35,25 @@ export default function Typing() {
         const labels = document.querySelectorAll('label');
         labels.forEach(label => {
             label.classList.remove('checked');
-            e.target.parentElement.disabled = false;
+            label.querySelector('input').disabled = false;
         })
         e.target.parentElement.classList.add('checked');
         e.target.parentElement.disabled = true;
         setNumWords(e.target.parentElement.innerText);
+
+        if (finished) {
+            const textarea = document.querySelector('textarea');
+            textarea.disabled = false;
+            textarea.value = '';
+            document.querySelectorAll('.correct').forEach(char => {
+                char.classList.remove('correct');
+            });
+
+            document.querySelectorAll('.incorrect').forEach(char => {
+                char.classList.remove('incorrect');
+            });
+            setFinished(false);
+        }
     }
 
     const handleTyping = (e) => {
@@ -71,6 +86,7 @@ export default function Typing() {
 
     const testComplete = () => {
         const timeElapsed = Date.now() - timeStarted;
+        setFinished(true);
 
         const wpm = document.querySelector('.wpm');
         wpm.innerText = `WPM: ${Math.round(numWords / (timeElapsed / 1000) * 60)}`;
@@ -97,6 +113,7 @@ export default function Typing() {
         document.querySelector('.retry').disabled = true;
         document.querySelector('.retry').classList.add('buttonDisabled');
         setStarted(false);
+        setFinished(false);
     }
 
     const handleReset = async () => {
@@ -111,6 +128,7 @@ export default function Typing() {
             char.classList.remove('incorrect');
         });
         setStarted(false);
+        setFinished(false);
 
         const response = await fetch('/api/get-words', {
             method: 'POST',
