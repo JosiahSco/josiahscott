@@ -4,16 +4,20 @@ import { useEffect, useState } from 'react'
 
 export default function Typing() {
     let [wordbank, setWordBank] = useState([]);
+    let [characterSpans, setCharacterSpans] = useState();
     let [numWords, setNumWords] = useState(25);
     let [started, setStarted] = useState(false);
     let [timeStarted, setTimeStarted] = useState(0);
 
-    const characterSpans = wordbank
-    .map(word => [...word, ' '])
-    .flat()
-    .map((char, key) => (
-        <span key={key}>{char}</span>
-    ));
+    useEffect(() => {
+        const spans = wordbank
+        .map(word => [...word, ' '])
+        .flat()
+        .map((char, key) => (
+            <span key={key}>{char}</span>
+        ));
+        setCharacterSpans(spans);
+    }, [wordbank]);
 
     const handlePaste = (e) => {
         e.preventDefault();
@@ -33,6 +37,8 @@ export default function Typing() {
         if (!started) {
             setStarted(true);
             setTimeStarted(Date.now());
+            document.querySelector('.retry').classList.remove('buttonDisabled');
+            document.querySelector('.retry').disabled = false;
         }
         let typed = e.target.value.trim().split('');
         const characters = document.querySelectorAll('span');
@@ -57,15 +63,56 @@ export default function Typing() {
 
     const testComplete = () => {
         console.log("finished");
-        setStarted(false);
         const timeElapsed = Date.now() - timeStarted;
         const wpm = document.querySelector('.infoRow p');
+        document.querySelector('textarea').disabled = true;
         wpm.innerText = `WPM: ${Math.round(numWords / (timeElapsed / 1000) * 60)}`
-        console.log(timeElapsed/1000);
+    }
+
+    const handleRetry = () => {
+        const textarea = document.querySelector('textarea');
+        textarea.disabled = false;
+        textarea.value = '';
+        document.querySelectorAll('.correct').forEach(char => {
+            char.classList.remove('correct');
+        });
+
+        document.querySelectorAll('.incorrect').forEach(char => {
+            char.classList.remove('incorrect');
+        });
+
+        document.querySelector('.retry').disabled = true;
+        document.querySelector('.retry').classList.add('buttonDisabled');
+        setStarted(false);
+    }
+
+    const handleReset = async () => {
+        const textarea = document.querySelector('textarea');
+        textarea.disabled = false;
+        textarea.value = '';
+        document.querySelectorAll('.correct').forEach(char => {
+            char.classList.remove('correct');
+        });
+
+        document.querySelectorAll('.incorrect').forEach(char => {
+            char.classList.remove('incorrect');
+        });
+        setStarted(false);
+
+        const response = await fetch('/api/get-words', {
+            method: 'POST',
+            body: JSON.stringify(numWords)
+        });
+        setWordBank(await response.json());
+
+        document.querySelector('.retry').disabled = true;
+        document.querySelector('.retry').classList.add('buttonDisabled');
     }
 
     useEffect(() => {
         document.querySelector('label#defaultNumWords').classList.add('checked');
+        document.querySelector('.retry').disabled = true;
+        document.querySelector('.retry').classList.add('buttonDisabled');
     }, []);
 
     useEffect(() => {
@@ -110,6 +157,8 @@ export default function Typing() {
                     {characterSpans}
                 </div>
                 <textarea className='inputBox' onPaste={handlePaste} onChange={handleTyping} placeholder='Start Typing...'></textarea>
+                <button className='reset' onClick={handleReset}>Reset</button>
+                <button className='retry' onClick={handleRetry}>Retry</button>
             </div>
         </div>
     )

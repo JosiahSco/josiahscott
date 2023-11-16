@@ -66,9 +66,38 @@ input[type="radio"] {
 }
 
 .infoRow p {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
     font-size: 24px;
     text-align: end;
     width: 200px;
+}
+
+.reset {
+    cursor: pointer;
+    float: inline-end;
+    background-color: red;
+    border: none;
+    border-radius: 6px;
+    font-size: 24px;
+    padding: 6px;
+    margin-left: 8px;
+}
+
+.retry {
+    cursor: pointer;
+    float: inline-end;
+    background-color: green;
+    border: none;
+    border-radius: 6px;
+    font-size: 24px;
+    padding: 6px;
+}
+
+.buttonDisabled {
+    cursor: auto;
+    background-color: grey;
 }
 
 @media only screen and (max-width: 1050px) {
