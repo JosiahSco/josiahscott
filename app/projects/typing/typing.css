@@ -5,7 +5,7 @@
     align-items: center;
     flex-wrap: wrap;
     min-height: 100vh;
-    
+    padding-top: 20px;
 }
 
 .wrapper {
@@ -14,7 +14,7 @@
 
 .wordBank {
     max-width: 100%;
-    font-size: 30px;
+    font-size: 29px;
     padding: 4px;
     margin-bottom: 8px;
 }
@@ -102,10 +102,19 @@ input[type="radio"] {
 
 @media only screen and (max-width: 1050px) {
     .typingMain {
-        margin-top: 70px;
-        margin-bottom: 70px;
+        margin-top: 30px;
+        margin-bottom: 0px;
     }
+
     .wrapper {
         width: 350px;
+    }
+
+    .wordBank {
+        font-size: 17px;
+    }
+
+    .inputBox {
+        height: 100px;
     }
 }
