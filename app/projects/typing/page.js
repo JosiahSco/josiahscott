@@ -17,6 +17,12 @@ export default function Typing() {
             <span key={key}>{char}</span>
         ));
         setCharacterSpans(spans);
+
+        if (numWords == 100) {
+            document.querySelector('.wordBank').classList.add('smallerText');
+        } else {
+            document.querySelector('.wordBank').classList.remove('smallerText');
+        }
     }, [wordbank]);
 
     const handlePaste = (e) => {
@@ -30,7 +36,7 @@ export default function Typing() {
             label.classList.remove('checked');
         })
         e.target.parentElement.classList.add('checked');
-        setNumWords(e.target.parentElement.innerText)
+        setNumWords(e.target.parentElement.innerText);
     }
 
     const handleTyping = (e) => {
@@ -129,6 +135,7 @@ export default function Typing() {
             setWordBank(await response.json());
         }
         fetchWords();
+
         
     }, [numWords])
 
