@@ -7,9 +7,10 @@ export async function POST(request) {
     let numWords = await request.json();
 
     const allWords = await get('words');
-    let selectedWords = [];
-    for (let i = 0; i < numWords; i++) {
-        selectedWords.push(allWords[Math.floor(Math.random() * allWords.length)])
+    let selectedWordSet = new Set();
+    while (selectedWordSet.size < numWords) {
+        selectedWordSet.add(allWords[Math.floor(Math.random() * allWords.length)]);
     }
-    return NextResponse.json(selectedWords);
+
+    return NextResponse.json(Array.from(selectedWordSet));
 }
