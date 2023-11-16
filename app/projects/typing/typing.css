@@ -38,6 +38,10 @@
     color: red;
 }
 
+.incorrect.space {
+    text-decoration: underline;
+}
+
 .wordNumRadioButtons {
     display: flex;
     flex-direction: row;

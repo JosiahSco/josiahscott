@@ -62,7 +62,7 @@ export default function Typing() {
             document.querySelector('.retry').classList.remove('buttonDisabled');
             document.querySelector('.retry').disabled = false;
         }
-        let typed = e.target.value.trim().split('');
+        let typed = e.target.value.split('');
         const characters = document.querySelectorAll('span');
         let finished = true;
         characters.forEach((charSpan, charIndex) => {
@@ -74,7 +74,13 @@ export default function Typing() {
             } else if (typedChar == charSpan.innerText) {
                 characters[charIndex].classList.remove('incorrect');
                 characters[charIndex].classList.add('correct');
+            } else if (typedChar == ' ' && charSpan.innerText == null) {
+                characters[charIndex].classList.remove('correct');
+                characters[charIndex].classList.add('incorrect');
+                if (charSpan.innerText == ' ') charSpan.classList.add('space');
+                console.log('space')
             } else {
+                if (charSpan.innerText == ' ') charSpan.classList.add('space');
                 characters[charIndex].classList.remove('correct');
                 characters[charIndex].classList.add('incorrect');
             }
