@@ -77,8 +77,6 @@ export default function Typing() {
             } else if (typedChar == ' ' && charSpan.innerText == null) {
                 characters[charIndex].classList.remove('correct');
                 characters[charIndex].classList.add('incorrect');
-                if (charSpan.innerText == ' ') charSpan.classList.add('space');
-                console.log('space')
             } else {
                 if (charSpan.innerText == ' ') charSpan.classList.add('space');
                 characters[charIndex].classList.remove('correct');
