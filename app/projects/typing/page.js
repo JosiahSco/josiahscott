@@ -156,9 +156,12 @@ export default function Typing() {
                             100    
                         </label>
                     </div>
-                    <p className='accuracy'>🎯 XX%</p>
-                    <p className='wpm'>WPM: XX</p>
+                    <div className='statistics'>
+                        <p className='accuracy'>🎯 XX%</p>
+                        <p className='wpm'>WPM: XX</p>
+                    </div>
                 </div>
+                <hr></hr>
                 <div className='wordBank'>
                     {characterSpans}
                 </div>

@@ -48,8 +48,10 @@
 label {
     display: flex;
     flex-direction: column-reverse;
+    align-content: center;
+    align-items: center;
     font-size: 24px;
-    margin: 10px;
+    margin: 0 10px 0 10px;
 }
 
 input[type="radio"] {
@@ -63,17 +65,35 @@ input[type="radio"] {
 
 .infoRow {
     display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-bottom: 10px;
 }
 
-.infoRow p {
+.wordNumRadioButtons {
+    min-width: 175px;
+    max-width: 200px;
+}
+
+
+.statistics {
     display: flex;
-    align-items: center;
+    align-items: flex-end;
     align-content: center;
-    justify-content: flex-end;
     font-size: 24px;
     text-align: end;
-    width: 200px;
+    min-width: 300px;
+    justify-content: flex-end;
 }
+
+.accuracy {
+    margin-right: 50px;
+}
+
+.statistics p {
+    /* margin-right: 50px; */
+    text-align: end;
+} 
 
 .reset {
     cursor: pointer;
@@ -89,7 +109,7 @@ input[type="radio"] {
 .retry {
     cursor: pointer;
     float: inline-end;
-    background-color: green;
+    background-color: darkgreen;
     border: none;
     border-radius: 6px;
     font-size: 24px;
@@ -99,6 +119,12 @@ input[type="radio"] {
 .buttonDisabled {
     cursor: auto;
     background-color: grey;
+}
+
+hr { 
+    border: 0;
+    height: 2px;
+    background-color: white;
 }
 
 @media only screen and (max-width: 1050px) {
@@ -121,5 +147,13 @@ input[type="radio"] {
 
     .inputBox {
         height: 100px;
+    }
+
+    .statistics {
+        justify-content: flex-start;
+    }
+
+    .accuracy {
+        margin-right: 23px;
     }
 }
