@@ -52,6 +52,7 @@ label {
     align-items: center;
     font-size: 24px;
     margin: 0 12px 0 4px;
+    cursor: pointer;
 }
 
 input[type="radio"] {

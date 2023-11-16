@@ -34,8 +34,10 @@ export default function Typing() {
         const labels = document.querySelectorAll('label');
         labels.forEach(label => {
             label.classList.remove('checked');
+            e.target.parentElement.disabled = false;
         })
         e.target.parentElement.classList.add('checked');
+        e.target.parentElement.disabled = true;
         setNumWords(e.target.parentElement.innerText);
     }
 
@@ -122,6 +124,7 @@ export default function Typing() {
 
     useEffect(() => {
         document.querySelector('label#defaultNumWords').classList.add('checked');
+        document.querySelector('label#defaultNumWords').disabled = true;
         document.querySelector('.retry').disabled = true;
         document.querySelector('.retry').classList.add('buttonDisabled');
     }, []);
