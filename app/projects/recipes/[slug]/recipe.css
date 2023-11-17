@@ -38,7 +38,7 @@
 }
 
 .recipeMain ol {
-    padding-left: 3.5rem;
+    padding-left: 4rem;
 }
 
 .recipeMain ol p {
@@ -60,10 +60,10 @@
 
 @media only screen and (max-width: 768px) {
     .recipeMain img {
-        max-width: 375px;
+        max-width: 350px;
     }
 
     .recipeContainer {
-        max-width: 375px;
+        max-width: 350px;
     }
 }
