@@ -53,7 +53,20 @@
     font-size: 32px;
 }
 
-.wimby:hover {
+.recipes {
+    width: 500px;
+    height: 300px;
+    border: solid 4px white;
+    border-radius: 20px;
+    background-color: #512b2b;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.5);
+    font-size: 32px;
+}
+
+.wimby:hover, .typing:hover, .recipes:hover {
     box-shadow: 0 4px 16px rgba(0,0,0,0.5);
 }
 
@@ -71,7 +84,7 @@
         width: 300px;
     }
 
-    .wimby, .typing {
+    .wimby, .typing, .recipes {
         width: 300px;
     }
 

@@ -18,6 +18,13 @@ export default function Projects() {
                     </h1>
                 </div>
             </Link>
+            <Link href={'/projects/recipes'} className="card">
+                <div className="recipes">
+                    <h1>
+                        Recipes
+                    </h1>
+                </div>
+            </Link>
             <Link href={'/projects'} className="card">
                 <div className="comingSoon">
                     <h1>
