@@ -20,7 +20,7 @@ export default async function Recipes() {
         <div className='recipesMain'>
             {/* <h1>Recipe Book (work in progress)</h1> */}
             {posts.map(post => (
-                <a href={'/projects/recipes/' + post.fields.slug}>
+                <a href={'/projects/recipes/' + post.fields.slug} key={post.fields.slug}>
                     <div className='recipeCard'>
                         <div className='imageContainer'> 
                             <img className='image' src={post.fields.image.fields.file.url}></img>
