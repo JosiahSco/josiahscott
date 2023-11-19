@@ -11,7 +11,7 @@ export default function Projects() {
                     </h1>
                 </div>
             </Link>
-            <Link href={'/projects/typing'} className="card">
+            <Link href={'https://typing.josiahscott.dev/'} target='_blank' className="card">
                 <div className="typing">
                     <h1>
                         Typing
