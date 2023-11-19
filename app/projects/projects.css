@@ -31,7 +31,7 @@
 .comingSoon {
     width: 500px;
     height: 300px;
-    border: solid 1px white;
+    border: solid 1px black;
     border-radius: 20px;
     background-color: #222a31;
     display: flex;

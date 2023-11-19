@@ -25,7 +25,7 @@
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    background-color: #859098;
+    background-color: #222a31;
     width: 600px;
     height: 300px;
     padding: 20px;
@@ -33,7 +33,7 @@
     margin: 20px;
     box-shadow: 0 4px 8px rgba(0,0,0,0.5);
     padding: 0;
-    border: solid 4px white;
+    border: solid 2px black;
 }
 
 .postLeft {
@@ -50,7 +50,7 @@
     justify-content: space-between;
     width: 100%;
     height: 100%;
-    border-left: solid 4px white;
+    border-left: solid 2px black;
 }
 
 .previewText {
@@ -74,7 +74,7 @@
     border-radius: 0 0 0px 0;
     /* background-color: #E63946; */
     background-color: #457B9D;
-    border-top: solid 4px white;
+    border-top: solid 2px black;
 }
 
 .readMore:active {

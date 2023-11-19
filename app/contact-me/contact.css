@@ -39,9 +39,9 @@
 
 .formWrapper {
     /* background-color: #457B9D; */
-    background-color: #859098;
+    background-color: #222a31;
     border-radius: 6px;
-    border: 4px solid white;
+    border: 2px solid black;
     margin: 30px;
     margin-top: 10px;
     min-width: 600px;
@@ -63,7 +63,7 @@
     /* border: 4px solid white; */
     background-color: transparent;
     color: white;
-    border-bottom: 4px solid white;
+    border-bottom: 2px solid black;
 }
 
 .message {
@@ -83,6 +83,7 @@
 }
 
 .emailForm button {
+    cursor: pointer;
     min-width: 600px;
 
     font-size: 25px;
@@ -94,15 +95,15 @@
 
 .emailForm button:hover {
    background-color: #457B9D;
-   /* border-radius: 0 0 15px 15px; */
+   border-radius: 0 0 4px 4px;
 }
 
 .emailForm button:active {
     font-size: 24px;
    /* background-color: #E63946; */
    background-color: #457B9D;
-   /* border-radius: 0 0 15px 15px; */
-   box-shadow: inset 5px 5px rgba(0,0,0,0.25);
+   border-radius: 0 0 4px 4px;
+   /* box-shadow: inset 4px 4px rgba(0,0,0,0.7); */
 }
 
 
