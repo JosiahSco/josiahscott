@@ -19,7 +19,7 @@
 .wimby {
     width: 500px;
     height: 300px;
-    border: solid 4px white;
+    border: solid 1px white;
     border-radius: 20px;
     background-image: linear-gradient(#232f46,#49365f,#985E6D);
     display: flex;
@@ -31,9 +31,9 @@
 .comingSoon {
     width: 500px;
     height: 300px;
-    border: solid 4px white;
+    border: solid 1px white;
     border-radius: 20px;
-    background-color: #859098;
+    background-color: #222a31;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -43,7 +43,7 @@
 .typing {
     width: 500px;
     height: 300px;
-    border: solid 4px white;
+    border: solid 1px white;
     border-radius: 20px;
     background-color: black;
     display: flex;
@@ -56,9 +56,9 @@
 .recipes {
     width: 500px;
     height: 300px;
-    border: solid 4px white;
+    border: solid 2px black;
     border-radius: 20px;
-    background-color: #512b2b;
+    background-color: #311b1b;
     display: flex;
     align-items: center;
     justify-content: center;
