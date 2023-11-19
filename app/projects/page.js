@@ -4,7 +4,7 @@ import Link from 'next/link'
 export default function Projects() {
     return (
         <main className="projectMain">
-            <Link href={'/projects/weather'} className="card">
+            <Link href={'https://weather.josiahscott.dev/'} target='_blank' className="card">
                 <div className="wimby">
                     <h1>
                         ☁Weather
@@ -18,7 +18,7 @@ export default function Projects() {
                     </h1>
                 </div>
             </Link>
-            <Link href={'/projects/recipes'} className="card">
+            <Link href={'https://recipes.josiahscott.dev/'} target='_blank' className="card">
                 <div className="recipes">
                     <h1>
                         Recipes
