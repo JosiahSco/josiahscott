@@ -18,6 +18,14 @@ export default function Projects() {
                     </h1>
                 </div>
             </Link>
+            <Link href={'https://asteroidInc.josiahscott.dev/'} target='_blank' className="card">
+                <div className="clicker">
+                    <img src='/asteroid.png'></img>
+                    <h1>
+                        Asteroid Inc. Clicker
+                    </h1>
+                </div>
+            </Link>
             <Link href={'https://recipes.josiahscott.dev/'} target='_blank' className="card">
                 <div className="recipes">
                     <h1>
