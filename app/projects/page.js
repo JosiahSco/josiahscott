@@ -4,6 +4,14 @@ import Link from 'next/link'
 export default function Projects() {
     return (
         <main className="projectMain">
+            <Link href={'https://asteroidInc.josiahscott.dev/'} target='_blank' className="card">
+                <div className="clicker">
+                    <img src='/asteroid.png'></img>
+                    <h1>
+                        Asteroid Inc. Clicker
+                    </h1>
+                </div>
+            </Link>
             <Link href={'https://weather.josiahscott.dev/'} target='_blank' className="card">
                 <div className="wimby">
                     <h1>
@@ -15,14 +23,6 @@ export default function Projects() {
                 <div className="typing">
                     <h1>
                         Typing
-                    </h1>
-                </div>
-            </Link>
-            <Link href={'https://asteroidInc.josiahscott.dev/'} target='_blank' className="card">
-                <div className="clicker">
-                    <img src='/asteroid.png'></img>
-                    <h1>
-                        Asteroid Inc. Clicker
                     </h1>
                 </div>
             </Link>
