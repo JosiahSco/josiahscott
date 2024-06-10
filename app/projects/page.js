@@ -4,6 +4,14 @@ import Link from 'next/link'
 export default function Projects() {
     return (
         <main className="projectMain">
+            <Link href={'https://ontime.josiahscott.dev/'} target='_blank' className="card">
+                <div className="ontime">
+                    <img src='/ontimeLogo.png'></img>
+                    <h1>
+                        
+                    </h1>
+                </div>
+            </Link>
             <Link href={'https://asteroidInc.josiahscott.dev/'} target='_blank' className="card">
                 <div className="clicker">
                     <img src='/asteroid.png'></img>

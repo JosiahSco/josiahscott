@@ -28,6 +28,22 @@
     box-shadow: 0 4px 8px rgba(0,0,0,0.5);
 }
 
+.ontime {
+    width: 500px;
+    height: 300px;
+    border: solid 1px white;
+    border-radius: 20px;
+    background-color: #1e242c;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.5);
+
+}
+    
+.ontime img {
+    width: 400px;
+}
 .comingSoon {
     width: 500px;
     height: 300px;
