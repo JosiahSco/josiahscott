@@ -3,7 +3,8 @@
     padding: 4px;
     text-align: center;
     background-color: #222a31;
-    box-shadow: 0 -2px 0 rgba(0,0,0,0.1);
+    background-color: #121212;
+    /* box-shadow: 0 -2px 0 rgba(0,0,0,0.1); */
     position: fixed;
     bottom: 0;
     font-size: 18px;

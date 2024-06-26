@@ -15,32 +15,32 @@
 .postPreviews {
     margin: 5vh;
     display: flex;
+    flex-direction: column;
     flex-wrap: wrap;
     justify-content: space-evenly;
-    width: 95vw;
 }
 
 .post {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     background-color: #222a31;
+    background-color: #282828;
     width: 600px;
-    height: 300px;
+    height: 250px;
     padding: 20px;
     border-radius: 6px;
     margin: 20px;
     box-shadow: 0 4px 8px rgba(0,0,0,0.5);
     padding: 0;
-    border: solid 2px black;
 }
 
 .postLeft {
     width: 100%;
-    text-align: center;
-    padding-left: 10px;
-    padding-right: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 20px;
 }
 
 .postRight {
@@ -50,20 +50,15 @@
     justify-content: space-between;
     width: 100%;
     height: 100%;
-    border-left: solid 2px black;
 }
 
 .previewText {
     display: flex;
     align-items: center;
-    height: 100%;
+    /* height: 100%; */
     margin: 20px;
 }
 
-
-.post:hover {
-    box-shadow: 0 16px 16px rgba(0,0,0,0.7);
-}
 
 .readMore {
     font-size: 18px;
@@ -71,23 +66,19 @@
     width: 100%;
     margin: 0px;
     padding: 8px;
-    border-radius: 0 0 0px 0;
+    border-radius: 0 0 6px 6px;
     /* background-color: #E63946; */
     background-color: #457B9D;
-    border-top: solid 2px black;
+    background-color: #7a5af5;
+    /* border-top: solid 2px black; */
 }
 
-.readMore:active {
-    box-shadow: inset 4px 4px rgba(0,0,0,0.25);
-    font-size: 17px;
-    padding: 8.5px;
-}
 
 @media only screen and (max-width: 768px) {
     .post {
         flex-direction: column;
         width: 300px;
-        height: 400px;
+        height: 350px;
     }
 
     .postLeft {
@@ -99,8 +90,6 @@
 
     .postRight {
         height: 100%;
-        border-left: solid 0 white;
-        border-top: solid 4px white;
     }
 
     .readMore {

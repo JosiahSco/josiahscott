@@ -106,63 +106,6 @@ export default function Resume() {
                     <p><b>OOP:</b> C++, Java</p>
                     <p><b>Scripting:</b> Python</p>
                 </div>
-                <br />
-                <hr />
-                <div className="classNamees">
-                    <h2>Relevent Courses</h2>
-                    <div className="space-between-container">
-                        <h4>Cloud Web Apps Development</h4>
-                        <p>Fall 2023</p>
-                    </div>
-                    <ul>
-                        <li>
-                            Built front-end single-page applications using JavaScript, HTML/CSS, and Bootstrap
-                        </li>
-                        <li>
-                            Develop back-end serverless applications with Google Cloud Functions, 
-                            implement Firebase security rules, and deploy to Firebase Hosting services
-                        </li>
-                        <li>
-                            Utilize a database for web application data management with Firestore
-                        </li>
-                    </ul>
-                    <br />
-                    <div className="space-between-container">
-                        <h4>Data Structures & Algorithms</h4>
-                        <p>Fall 2023</p>
-                    </div>
-                    <ul>
-                        <li>
-                            Acquired in-depth knowledge of fundamental data structures, including arrays, 
-                            linked lists, stacks, queues, trees, and graphs, enabling efficient data organization and retrieval
-                        </li>
-                        <li>
-                            Developed proficiency in algorithm design and analysis, 
-                            gaining the ability to create and optimize algorithms for solving complex computational problems.
-                        </li>
-                        <li>
-                            Applying data structures and algorithms to real-world scenarios,
-                            enhancing computational efficiency and algorithmic thinking
-                        </li>
-                    </ul>
-                    <br />
-                    <div className="space-between-container">
-                        <h4>Object Oriented Software Design</h4>
-                        <p>Fall 2022</p>
-                    </div>
-                    <ul>
-                        <li>
-                            Learned and implemented projects using creational, structural and behavioral design patterns
-                        </li>
-                        <li>
-                            Applied object oriented principles of abstraction, inheritance, and polymorphism
-                        </li>
-                        <li>
-                            Developed Java GUI-based projects
-                        </li>
-                    </ul>
-                    <br></br>
-                </div>
                 <hr />
                 <br />
             </div>

@@ -38,10 +38,11 @@
 }
 
 .formWrapper {
-    /* background-color: #457B9D; */
     background-color: #222a31;
+    background-color: #282828;
     border-radius: 6px;
-    border: 2px solid black;
+    /* border: 2px solid black; */
+    box-shadow: 0 4px 8px rgba(0,0,0,0.5);
     margin: 30px;
     margin-top: 10px;
     min-width: 600px;

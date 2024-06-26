@@ -16,10 +16,10 @@
     margin: 20px;
 }
 
+
 .wimby {
     width: 500px;
     height: 300px;
-    border: solid 1px white;
     border-radius: 20px;
     background-image: linear-gradient(#232f46,#49365f,#985E6D);
     display: flex;
@@ -31,7 +31,6 @@
 .ontime {
     width: 500px;
     height: 300px;
-    border: solid 1px white;
     border-radius: 20px;
     background-color: #1e242c;
     display: flex;
@@ -44,10 +43,10 @@
 .ontime img {
     width: 400px;
 }
+
 .comingSoon {
     width: 500px;
     height: 300px;
-    border: solid 1px black;
     border-radius: 20px;
     background-color: #222a31;
     display: flex;
@@ -59,7 +58,6 @@
 .typing {
     width: 500px;
     height: 300px;
-    border: solid 1px white;
     border-radius: 20px;
     background-color: #013e01;
     display: flex;
@@ -72,7 +70,6 @@
 .clicker {
     width: 500px;
     height: 300px;
-    border: solid 1px white;
     border-radius: 20px;
     background-color: black;
     display: flex;
@@ -89,7 +86,6 @@
 .recipes {
     width: 500px;
     height: 300px;
-    border: solid 2px black;
     border-radius: 20px;
     background-color: #311b1b;
     display: flex;
@@ -117,8 +113,12 @@
         width: 300px;
     }
 
-    .wimby, .typing, .recipes, .clicker {
+    .wimby, .typing, .recipes, .clicker, .ontime {
         width: 300px;
+    }
+
+    .ontime img {
+        width: 250px;
     }
 
 
