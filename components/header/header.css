@@ -17,7 +17,7 @@
 
 .name {
     font-size: 28px;
-    min-width: 225px;
+    min-width: 205px;
     margin-left: 20px;
     margin-right: 0px;
     z-index: 3;
@@ -132,7 +132,7 @@
     padding: 10px;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 800px) {
 
     .navigation {
         justify-content: space-between;
