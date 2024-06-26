@@ -95,17 +95,11 @@
 }
 
 .emailForm button:hover {
-   background-color: #457B9D;
+   background-color: #7a5af5;
    border-radius: 0 0 4px 4px;
 }
 
-.emailForm button:active {
-    font-size: 24px;
-   /* background-color: #E63946; */
-   background-color: #457B9D;
-   border-radius: 0 0 4px 4px;
-   /* box-shadow: inset 4px 4px rgba(0,0,0,0.7); */
-}
+
 
 
 .links {
