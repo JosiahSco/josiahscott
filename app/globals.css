@@ -1,6 +1,7 @@
 :root {
   /* background-color: #1D3557; */
   background-color: #0f1a29;
+  background-color: #222a31;
   /* background-color: #fff; */
   color: #F1FAEE;
   color: black;
@@ -132,6 +133,11 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: center;
+}
+
+main {
+  background-color: #0f1a29;
+
 }
 
 
