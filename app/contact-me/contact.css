@@ -128,8 +128,7 @@
     transform: translate(-50%, -50%);
     width: 700px;
     height: 400px;
-    /* background-color: #457B9D; */
-    background-color: #859098;
+    background-color: #282828;
     color: white;
     font-size: 30px;
     border-radius: 6px;
@@ -149,16 +148,11 @@
     top: 86%;
     left: 86.7%;
     border: 0;
-    background-color: #457B9D;
+    background-color: #7a5af5;
     color: white;
     padding: 5px;
     font-size: 25px;
     border-radius: 5px;
-}
-
-.messageSentModal button:active {
-    box-shadow: inset 5px 5px rgba(0,0,0,0.25);
-    font-size: 24px;
 }
 
 
