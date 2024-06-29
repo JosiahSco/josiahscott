@@ -98,7 +98,7 @@ export default function Resume() {
                     <br />
                 </div>
                 <hr />
-                <div className="skills">
+                <div className="resume-skills">
                     <h2>Skills</h2>
                     <p><b>Frontend:</b> JavaScript, TypeScript, React, Next.js, Bootstrap, HTML, CSS</p>
                     <p><b>Backend:</b> Node.js, RESTful APIs, GraphQL, Firebase</p>

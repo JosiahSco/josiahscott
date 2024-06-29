@@ -19,7 +19,7 @@ export default function Home() {
           /> */}
         <img src='temp-profile.png' className='pfp' id='pfp'></img>
         </div>
-        <div className='links'>
+        <div className='home-links'>
           <a href='https://github.com/JosiahSco' target='_blank'>
             <Image 
                 src='/github-pages.png'

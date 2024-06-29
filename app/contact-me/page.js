@@ -39,7 +39,7 @@ export default function ContactMe() {
     }
 
     return (
-        <main className="main">
+        <main className="contact-main">
             <div className="leftWrapper">
                 <div className='contactInfo'>
                     <h1>Contact Info</h1>
@@ -94,7 +94,7 @@ export default function ContactMe() {
                 <div className="formWrapper">
                     <form className="emailForm" onSubmit={handleSubmit}>
                         <label>
-                            <input className="name" type='text' name='name' value={formData.name} onChange={handleChange} placeholder='Name' required></input>
+                            <input className="name-input" type='text' name='name' value={formData.name} onChange={handleChange} placeholder='Name' required></input>
                         </label>
                         <label>
                             <input type='email' name='email' value={formData.email} onChange={handleChange} placeholder='Email' required></input>

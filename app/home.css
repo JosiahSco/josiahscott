@@ -97,15 +97,15 @@
 }
 
 
-.links a {
+.home-links a {
   margin: 10px;
 }
 
-.links {
+.home-links {
   min-width: 360px;
 }
 
-.links img:hover {
+.home-links img:hover {
   transform: translateY(-5px);
 }
 
