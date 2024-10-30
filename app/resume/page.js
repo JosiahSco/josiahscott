@@ -23,11 +23,11 @@ export default function Resume() {
                     <h2>Education</h2>
                     <div className="space-between-container">
                         <h4>University of Central Oklahoma</h4>
-                        <p>Fall 2021 - Spring 2025</p>
+                        <p>August 2021 - December 2024</p>
                     </div>
                     <div className="education-info">
                         <p>Computer Science</p>
-                        <p>GPA: 3.88</p>
+                        <p>GPA: 3.87</p>
                         <p>Presidents Honor Roll</p>
                     </div>
                     <br />
@@ -41,24 +41,24 @@ export default function Resume() {
                     </div>
                     <ul>
                         <li>
-                            Designed and implemented autoscaling load tests using python to assess performance of GraphQL  
-                            and RESTful APIs for ecommerce website launch
-                        </li>
-                        <li>
-                            Developed a comprehensive frontend functional testing suite for an internal company web app 
-                            using TypeScript and the Playwright library
-                        </li>
-                        <li>
-                            Utilized Docker and Jenkins to streamline deployment through containerization and 
-                            automation pipelines
-                        </li>
-                        <li>
-                            Developed software solutions to automate key business functions, and managed individual 
+                            Developed software solutions to automate key business functions, and managed individual
                             assignments to meet project milestones and deliverables
                         </li>
                         <li>
-                            Participated in code reviews, testing, and debugging to ensure software quality and functionality, 
-                            staying up-to-date with the latest technologies and trends in the industry
+                            Designed and implemented autoscaling load tests using python to assess performance of GraphQL
+                            and RESTful APIs for ecommerce website launch
+                        </li>
+                        <li>
+                            Engaged in code reviews, testing, and debugging to maintain high software quality, with a focus
+                            on C# and .NET testing frameworks (e.g., NUnit, Playwright)
+                        </li>
+                        <li>
+                            Developed comprehensive frontend functional testing suites for an internal company web apps
+                            using TypeScript and the Playwright library
+                        </li>
+                        <li>
+                            Utilized Docker and Jenkins to streamline deployment through containerization and
+                            automation pipelines
                         </li>
                     </ul>
                     <br></br>
@@ -71,11 +71,11 @@ export default function Resume() {
                             Organized 3 hours of sessions each week to assist students in Beginning Programming
                         </li>
                         <li>
-                            Assisted students with specific coding challenges, errors, and project development, 
+                            Assisted students with specific coding challenges, errors, and project development,
                             fostering a supportive learning environment.
                         </li>
                         <li>
-                            Assessed student performance, offered constructive feedback, 
+                            Assessed student performance, offered constructive feedback,
                             and adapted teaching methods to diverse learning styles for improved Python proficiency.
                         </li>
                     </ul>
@@ -99,16 +99,15 @@ export default function Resume() {
                 </div>
                 <hr />
                 <div className="resume-skills">
-                    <h2>Skills</h2>
-                    <p><b>Frontend:</b> JavaScript, TypeScript, React, Next.js, Bootstrap, HTML, CSS</p>
-                    <p><b>Backend:</b> Node.js, RESTful APIs, GraphQL, Firebase</p>
-                    <p><b>DevOps:</b> Github, Docker, Jenkins, Automated Testing</p>
-                    <p><b>OOP:</b> C++, Java</p>
-                    <p><b>Scripting:</b> Python</p>
+                    <h2>Technical Proficiencies</h2>
+                    <p><i>.NET Development:</i> C# programming, .NET Core, NUnit for unit testing, ASP.NET MVC basics</p>
+                    <p><i>Automation and Testing:</i> NUnit, Playwright for end-to-end testing, load testing with Python</p>
+                    <p><i>DevOps and CI/CD:</i> Docker for containerization, Jenkins for CI/CD pipelines, Git/GitHub for version control</p>
+                    <p><i>Frontend:</i> JavaScript, TypeScript, React, Next.js, Bootstrap, HTML, CSS</p>
                 </div>
                 <hr />
                 <br />
             </div>
-    </main>
-)
+        </main>
+    )
 }

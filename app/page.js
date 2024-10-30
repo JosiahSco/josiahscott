@@ -52,9 +52,9 @@ export default function Home() {
       <div className="bio">
         <h1>Biography</h1>
         <p>
-          I am a sofware developer and computer science student. This website is my first jump into web development. 
+          I am a sofware developer and computer science student. I created this website to learn and practice. 
           I am currently working part time as a developer for Hobby Lobby developing frontend functional tests with
-          Playwright, and load tests with Locust.
+          Playwright, and load tests with Locust. I use C# and TypeScript for my work.
         </p>
         <p>I intend to use this website to show off my projects, and write about my progress as well as development topics that interest me.</p>
         <p>Check out my projects, blog posts, or send me a message.</p>
@@ -63,7 +63,7 @@ export default function Home() {
           <h2>Interests</h2>
           <ul>
             <li>Webapp Development</li>
-            <li>Programming Language Design</li>
+            <li>.NET MVC</li>
             <li>Automated Testing</li>
             <li>Containerization</li>
           </ul>
@@ -74,7 +74,7 @@ export default function Home() {
             <li>Frontend Testing</li>
             <li>API Load Testing</li>
             <li>Object Oriented Programming</li>
-            <li>TypeScript, Python, C++</li>
+            <li>TypeScript, Python, C#</li>
           </ul>
         </div>
       </div>
